@@ -1,0 +1,364 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+section,
+footer,
+article,
+header,
+pre {
+  width: 100%;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: initial;
+  margin-top: 1em;
+}
+h1 {
+  margin: 0 auto;
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+}
+h1.note {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #181818;
+  font-weight: 100;
+}
+h1.number {
+  margin: 0;
+  font-weight: normal;
+}
+h1.popout {
+  margin: 0;
+  font-weight: bold;
+  font-style: italic;
+  color: #FFFFFF;
+  font-size: 100px;
+  opacity: .5;
+}
+h1.title {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  font-size: 55px;
+  font-weight: 100;
+  text-align: center;
+}
+.full-height {
+  height: 100%;
+}
+.full-width {
+  width: 100%;
+}
+section {
+  width: 100%;
+  min-height: 100px;
+}
+footer {
+  width: 100%;
+  height: 120px;
+  backgorund: #FFFFFF;
+  line-height: 120px;
+  text-align: center;
+  color: #CACBCD;
+  font-size: 24px;
+}
+.flex {
+  display: flex;
+}
+.fl-center {
+  justify-content: center;
+  align-items: center;
+}
+.fl-space {
+  justify-content: space-around;
+}
+.fl-fill {
+  justify-content: space-around;
+  align-items: stretch;
+}
+.fl-strech {
+  align-items: stretch;
+}
+.fl-wide {
+  width: 100%;
+}
+.column {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+.fl-2 {
+  flex-grow: 2;
+  flex-shrink: 2;
+}
+.fl-3 {
+  flex-grow: 2;
+  flex-shrink: 2;
+}
+.fl-4 {
+  flex-grow: 2;
+  flex-shrink: 2;
+}
+.fl-5 {
+  flex-grow: 2;
+  flex-shrink: 2;
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+#splash {
+  background: url('../res/lights.jpg');
+  background-size: cover;
+}
+#splash .scroll {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+#splash .scroll i {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 1px 1px 1px #000;
+  font-size: 400px;
+  margin: 0 auto;
+}
+.inner {
+  width: 100%;
+  height: 100%;
+}
+#black {
+  background: #181818;
+}
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  width: 42px;
+  padding-top: 42px;
+  padding-bottom: 42px;
+  display: flex;
+  flex-direction: column-revers;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+header .item-shell {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+header .item-shell .item {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  white-space: nowrap;
+  clear: both;
+  text-align: center;
+  cursor: pointer;
+  transition: ease all 200ms;
+}
+header .item-shell .item .button {
+  color: #FFFFFF;
+  mix-blend-mode: burn;
+}
+header .item-shell .item .popout {
+  display: none;
+  visibility: hidden;
+  height: 100%;
+  width: 100%;
+}
+header .item-shell .item .popout .image {
+  width: 100%;
+  height: 100%;
+}
+header .item-shell .item .popout #n1 {
+  background: url("../res/dataroads.jpg");
+}
+header .item-shell .item .popout #n2 {
+  background: url("../res/peak.jpg");
+}
+header .item-shell .item .popout #n3 {
+  background: url("../res/lighthouse.jpg");
+}
+header .item-shell .item .popout #n4 {
+  background: url("../res/surf.jpg");
+}
+header .item-shell .item .popout .text {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -100%;
+  text-transform: uppercase;
+  opacity: .7;
+  font-weight: 600;
+  font-size: 30px;
+  mix-blend-mode: luminosity;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .item:hover {
+  width: 442px;
+  color: #000;
+  background: #FFFFFF;
+  transform: translateX(-400px);
+  text-align: left;
+  justify-content: left;
+  box-shadow: 0 0.5rem 1rem rgba(50, 50, 50, 0.35);
+}
+header .item:hover .button {
+  width: 42px;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  transition: ease 200ms color,
+					ease 200ms background;
+}
+header .item:hover .button:hover {
+  background: #181818;
+  color: #FFFFFF;
+  box-shadow: 0px 0px 4px 1px rgba(1, 1, 1, 0.5);
+}
+header .item:hover .popout {
+  display: block;
+  visibility: visible;
+  width: 100%;
+}
+section#intro {
+  margin: 0 auto;
+  text-align: center;
+}
+section#portfolio {
+  height: 350px;
+  padding-top: 144px;
+  background-image: url("../../dist/res/portfolio.jpg");
+  background-size: cover;
+  text-align: center;
+}
+.card-container {
+  width: 100%;
+  text-align: center;
+}
+.card-container .card {
+  margin: 60px;
+  width: 15%;
+  min-height: 200px;
+  display: inline-block;
+  color: #a4a1a1;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
+}
+.card-container .n1 {
+  background-image: url("../../dist/res/daniel.jpg");
+  background-size: cover;
+}
+.card-container .n2 {
+  background-image: url("../../dist/res/peter.jpg");
+  background-size: cover;
+}
+.card-container .n3 {
+  background-image: url("../../dist/res/matthew.jpg");
+  background-size: cover;
+}
+.card-container .n4 {
+  background-image: url("../../dist/res/ryan.jpg");
+  background-size: cover;
+}
+.card-container .n5 {
+  background-image: url("../../dist/res/ryan.jpg");
+  background-size: cover;
+}
+.card-container .n6 {
+  background-image: url("../../dist/res/city.jpg");
+  background-size: cover;
+}
+.card-container .n7 {
+  background-image: url("../../dist/res/ryan.jpg");
+  background-size: cover;
+}
+div.card h2 {
+  font-size: 30px;
+  font-weight: 100;
+}
+div.card p {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+div.card-image {
+  width: 100%;
+  height: 55%;
+  min-height: 300px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+button {
+  min-width: 210px;
+  margin: 0 auto;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  font-size: 20px;
+  border-radius: 29px;
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.4);
+  border: none;
+  verticle-align: middle;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+button:hover {
+  transform: scale(1.05);
+}
+section.portfolio.button-light {
+  background: #FFF;
+  color: #000;
+}

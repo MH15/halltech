@@ -1,0 +1,172 @@
+@import "ui";
+
+* {	
+	// border: 1px solid rgba(200,0,0,.5) !important;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, section, 
+footer, article, header, pre { 
+	width: 100%;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: initial;
+	margin-top: 1em;
+}
+
+h1 {
+	margin: 0 auto;
+	font-size: 24px;
+	text-align: center;
+	width: 100%;
+}
+
+h1.note {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: @black;
+	font-weight: 100;
+}
+
+h1.number {
+	margin: 0;
+	font-weight: normal;
+}
+h1.popout {
+	margin: 0;
+	font-weight: bold;
+	font-style: italic;
+	color: @white;
+	font-size: 100px;
+	opacity: .5;
+}
+h1.title {
+	margin-top: 50px;
+	margin-bottom: 60px;
+	font-size: 55px;
+	font-weight: 100;
+	text-align: center;
+}
+
+//   ___  __   _  _  _  _   __   __ _ 
+//  / __)/  \ ( \/ )( \/ ) /  \ (  ( \
+// ( (__(  O )/ \/ \/ \/ \(  O )/    /
+//  \___)\__/ \_)(_/\_)(_/ \__/ \_)__)
+// 
+
+
+// some common functions
+
+// use on splash screens, etc to be full height
+.full-height {
+	height: 100%;
+}
+.full-width {
+	width: 100%;
+}
+
+
+
+
+
+
+// Sections are used for major portions of a page such
+// as a splash screen or the entire text content of the
+// page. Articles are used for other, smaller breakups
+// such as an article in a feed
+section {
+	width: 100%;
+	min-height: 100px;
+
+}
+
+
+
+// Articles are used for smaller elements on the page like
+// a blog post or a paragraph about the team
+article {
+
+}
+
+
+// Footers should appear on every page (excluding webapp 
+// style pages) and contain the same thing on each page
+footer {
+	width: 100%;
+	height: 120px;
+	backgorund: @white;
+	line-height: 120px;
+	text-align: center;
+	color: @gray-text;
+	font-size: 24px;
+}
+
+
+//  ____  __    ____  _  _      __    __  ____ 
+// (  __)(  )  (  __)( \/ )    (  )  (  )(  _ \
+//  ) _) / (_/\ ) _)  )  (     / (_/\ )(  ) _ (
+// (__)  \____/(____)(_/\_)    \____/(__)(____/
+
+
+// mixins
+.flex { display: flex } 
+// use to equally space (center) one element
+.fl-center {
+	justify-content: center;
+	align-items: center;
+}
+// use to equally space (center) multiple elements
+.fl-space {
+	justify-content: space-around;
+}
+// use to fill entire available width
+.fl-fill {
+	justify-content: space-around;
+	align-items: stretch;
+}
+// use to expand items to full height
+.fl-strech {
+	align-items: stretch;
+}
+
+// use to make an element larger in relation to another
+// default is flex-grow: 1;
+.fl-wide {
+	width: 100%;
+}
+
+
+.column {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 0;
+}
+
+.fl-2 {
+	flex-grow: 2;
+	flex-shrink: 2;
+}
+.fl-3 {
+	flex-grow: 2;
+	flex-shrink: 2;
+}
+.fl-4 {
+	flex-grow: 2;
+	flex-shrink: 2;
+}
+.fl-5 {
+	flex-grow: 2;
+	flex-shrink: 2;
+}

@@ -1,0 +1,150 @@
+@import "layout";
+@import "ui";
+
+#splash {
+	background: @white;
+	background: url('../res/texture.png');
+
+	header {
+		flex-grow: 0;
+		flex-shrink: 0;
+		flex-basis: 120px;
+		opacity: @glass + .1;
+
+		.logo {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 120px;
+			img {
+				margin: 0 auto;
+				margin-top: 30px;
+				opacity: 0.9;
+			}
+		}
+		
+
+		.buttons {
+			width: 100%;
+
+			.inner {
+				width: 80px;
+
+				.tab {
+					height: 80px;
+					margin: 0 auto;
+					margin-bottom: 80px;
+					margin-top: 80px;
+					border: none;
+					border-top: 3px solid @ui-main;
+					padding: @margin;
+					cursor: pointer;
+
+					div {
+						display: block;
+						width: 100%;
+					}
+					.subtitle {
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+	}
+}
+
+.outer-container {
+    border: 5px solid purple;
+    position: relative;
+    overflow: hidden;
+}
+
+.inner-container {
+    position: absolute;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+
+.card {
+	margin: 0 auto;
+	margin-right: @margin;
+	margin-left: @margin;
+	margin-top: @margin;
+	margin-bottom: @margin * 4;
+
+	.paper {
+		border-bottom-left-radius: @radius;
+		border-top-right-radius: @radius;
+		border-radius: @radius;
+		background: url('../res/subtle_dots.png');
+
+		.color {
+			border-bottom-left-radius: @radius;
+			border-top-right-radius: @radius;
+			border-radius: @radius;
+			background: @ui-main;
+			opacity: @glass;
+			// offset offset blur scale
+			box-shadow: 4px 4px 12px 4px rgba(96, 96, 96, 0.48);
+
+			h1.popout {
+				position: relative;
+				left: 50%;
+				top: 35%;
+
+			}
+		}
+	}
+	.content {
+		padding: @margin * 8;
+		padding-top: 0;
+		padding-bottom: 0;
+		align-items: flex-end;
+		position: relative;
+		top: -100%;
+		max-width: 100%;
+		overflow: hidden;
+
+		.inner {
+			width: 100%;			
+		}
+	}
+	.inner::-webkit-scrollbar {
+    	display: none;
+	}
+}
+
+
+article {
+	min-width: 140px;
+	flex-basis: 140px;
+	height: 280px;
+	margin-right: 40px;
+	background: @white;
+	opacity: 4;
+	box-shadow: 8px 8px 31px 11px rgba(96, 96, 96, 0.38);
+	border-radius: 2px;
+	padding: 10px;
+}
+
+
+footer {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	height: @margin * 4;
+	justify-content: flex-end;
+	line-height: @margin * 4;
+
+	div.item {
+		padding-right: 5px;
+		padding-left: 5px;
+		text-transform: uppercase;
+	}
+	div.item:last-child {
+		padding-right: @margin + 5px;
+	}
+}
