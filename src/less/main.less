@@ -128,7 +128,8 @@ header {
 					height: 100%;
 				}
 				#n1 {
-					background: url("../res/dataroads.jpg");
+					background: url("../../dist/res/city.jpg");
+					background-size: cover;
 				}
 				#n2 {
 					background: url("../res/peak.jpg");
@@ -206,6 +207,14 @@ section#portfolio {
 	text-align: center;
 }
 
+section#contact {
+	padding-top: 30px;
+	padding-bottom: 100px;
+	min-height: 700px;
+	background-image: url("../../dist/res/water.jpg");
+	background-size: cover;
+}
+
 .card-container {
 	width: 100%;
 	text-align: center;
@@ -238,16 +247,49 @@ section#portfolio {
 			  background-size: cover;
 			}
 			.n5 {
-			  background-image: url("../../dist/res/ryan.jpg");
+			  background-image: url("../../dist/res/small business.jpg");
 			  background-size: cover;
 			}
 			.n6 {
-			  background-image: url("../../dist/res/city.jpg");
+			  background-image: url("../../dist/res/big business.png");
 			  background-size: cover;
 			}
 			.n7 {
-			  background-image: url("../../dist/res/ryan.jpg");
+			  background-image: url("../../dist/res/startup.jpg");
 			  background-size: cover;
+			}
+
+			input, textarea {
+				margin-top: 30px;
+				margin-bottom: 30px;
+				margin-left: 2%;
+				margin-right: 2%;
+				padding: 15px;
+				width: 30%;
+				min-height: 55px;
+				font-size: 20px;
+				border: none;
+				border-radius: 6px;
+				box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
+			}
+
+			textarea.big {
+				margin-bottom: 60px;
+				padding: 15px;
+				width: 64%;
+				min-height: 400px;
+				font-size: 20px;
+			}
+
+			::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  				color: #9c9eb0;
+				font-size: 20px;
+  				font-family: 'Roboto';
+			}
+			::-moz-placeholder { /* Firefox 19+ */
+			 	color: #9c9eb0;
+				font-size: 20px;
+  				font-family: 'Roboto';
 			}
 }
 
@@ -286,8 +328,21 @@ button {
   transition: all 200ms ease;
 }
 
+button.light {
+	background: 
+}
+
+button.green {
+	background: #4CE274
+}
+
+button.green:hover {
+	background: #FFF;
+}
+
 button:hover {
-  transform: scale(1.05);
+  box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.4);
+  background: #d5d6dd
 }
 
 section.portfolio.button-light {

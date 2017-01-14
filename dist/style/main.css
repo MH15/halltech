@@ -60,10 +60,13 @@ h1.popout {
 }
 h1.title {
   margin-top: 50px;
-  margin-bottom: 60px;
+  margin-bottom: 35px;
   font-size: 55px;
   font-weight: 100;
   text-align: center;
+}
+h1.white {
+  color: #FFFFFF;
 }
 .full-height {
   height: 100%;
@@ -217,7 +220,8 @@ header .item-shell .item .popout .image {
   height: 100%;
 }
 header .item-shell .item .popout #n1 {
-  background: url("../res/dataroads.jpg");
+  background: url("../../dist/res/city.jpg");
+  background-size: cover;
 }
 header .item-shell .item .popout #n2 {
   background: url("../res/peak.jpg");
@@ -284,6 +288,13 @@ section#portfolio {
   background-size: cover;
   text-align: center;
 }
+section#contact {
+  padding-top: 30px;
+  padding-bottom: 100px;
+  min-height: 700px;
+  background-image: url("../../dist/res/water.jpg");
+  background-size: cover;
+}
 .card-container {
   width: 100%;
   text-align: center;
@@ -315,16 +326,46 @@ section#portfolio {
   background-size: cover;
 }
 .card-container .n5 {
-  background-image: url("../../dist/res/ryan.jpg");
+  background-image: url("../../dist/res/small business.jpg");
   background-size: cover;
 }
 .card-container .n6 {
-  background-image: url("../../dist/res/city.jpg");
+  background-image: url("../../dist/res/big business.png");
   background-size: cover;
 }
 .card-container .n7 {
-  background-image: url("../../dist/res/ryan.jpg");
+  background-image: url("../../dist/res/startup.jpg");
   background-size: cover;
+}
+.card-container input,
+.card-container textarea {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 15px;
+  width: 30%;
+  min-height: 55px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
+}
+.card-container textarea.big {
+  margin-bottom: 60px;
+  width: 64%;
+  min-height: 400px;
+}
+.card-container ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #9c9eb0;
+  font-size: 20px;
+  font-family: 'Roboto';
+}
+.card-container ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #9c9eb0;
+  font-size: 20px;
+  font-family: 'Roboto';
 }
 div.card h2 {
   font-size: 30px;
@@ -355,8 +396,15 @@ button {
   cursor: pointer;
   transition: all 200ms ease;
 }
+button.green {
+  background: #4CE274;
+}
+button.green:hover {
+  background: #FFF;
+}
 button:hover {
-  transform: scale(1.05);
+  box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.4);
+  background: #d5d6dd;
 }
 section.portfolio.button-light {
   background: #FFF;
