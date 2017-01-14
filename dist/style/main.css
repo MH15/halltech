@@ -298,44 +298,41 @@ section#contact {
 .card-container {
   width: 100%;
   text-align: center;
+  flex-wrap: wrap;
 }
 .card-container .card {
   margin: 60px;
-  width: 15%;
   min-height: 200px;
-  display: inline-block;
+  min-width: 250px;
   color: #a4a1a1;
   text-align: center;
   border-radius: 5px;
   box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
 }
-.card-container .n1 {
+.card-container .card-image {
+  background-size: cover;
+  background-origin: center;
+}
+.card-container #n1 {
   background-image: url("../../dist/res/daniel.jpg");
-  background-size: cover;
 }
-.card-container .n2 {
+.card-container #n2 {
   background-image: url("../../dist/res/peter.jpg");
-  background-size: cover;
 }
-.card-container .n3 {
+.card-container #n3 {
   background-image: url("../../dist/res/matthew.jpg");
-  background-size: cover;
 }
-.card-container .n4 {
+.card-container #n4 {
   background-image: url("../../dist/res/ryan.jpg");
-  background-size: cover;
 }
-.card-container .n5 {
+.card-container #n5 {
   background-image: url("../../dist/res/small business.jpg");
-  background-size: cover;
 }
-.card-container .n6 {
+.card-container #n6 {
   background-image: url("../../dist/res/big business.png");
-  background-size: cover;
 }
-.card-container .n7 {
+.card-container #n7 {
   background-image: url("../../dist/res/startup.jpg");
-  background-size: cover;
 }
 .card-container input,
 .card-container textarea {
@@ -346,14 +343,17 @@ section#contact {
   padding: 15px;
   width: 30%;
   min-height: 55px;
+  font-size: 20px;
   border: none;
   border-radius: 6px;
   box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
 }
 .card-container textarea.big {
   margin-bottom: 60px;
+  padding: 15px;
   width: 64%;
   min-height: 400px;
+  font-size: 20px;
 }
 .card-container ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
