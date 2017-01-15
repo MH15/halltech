@@ -43,7 +43,6 @@ h1 {
 h1.note {
   margin-top: 10px;
   margin-bottom: 10px;
-  color: #181818;
   font-weight: 100;
 }
 h1.number {
@@ -65,8 +64,40 @@ h1.title {
   font-weight: 100;
   text-align: center;
 }
+h1.name {
+  margin: 8px;
+  font-size: 40px;
+  font-weight: 100;
+}
 h1.white {
   color: #FFFFFF;
+}
+h1.black {
+  color: #181818;
+}
+h1.splash {
+  font-size: 70px;
+  font-weight: 100;
+}
+article {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-left: 18%;
+  padding-right: 18%;
+  width: 100%;
+  line-height: 2;
+  font-weight: 100;
+  font-size: 32px;
+}
+a {
+  margin: 0 px;
+  padding: 0px;
+  text-decoration: none;
+}
+.row {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
 }
 .full-height {
   height: 100%;
@@ -277,6 +308,10 @@ header .item:hover .popout {
   visibility: visible;
   width: 100%;
 }
+section {
+  margin: 0 auto;
+  widht: 100%;
+}
 section#intro {
   margin: 0 auto;
   text-align: center;
@@ -295,6 +330,10 @@ section#contact {
   background-image: url("../../dist/res/water.jpg");
   background-size: cover;
 }
+section#team {
+  padding-top: 30px;
+  text-align: center;
+}
 .card-container {
   width: 100%;
   text-align: center;
@@ -303,15 +342,28 @@ section#contact {
 .card-container .card {
   margin: 60px;
   min-height: 200px;
-  min-width: 250px;
+  min-width: 280px;
   color: #a4a1a1;
   text-align: center;
   border-radius: 5px;
   box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+.card-container div.big {
+  min-height: 440px;
+  min-width: 470px;
+  transition: all 200ms ease;
 }
 .card-container .card-image {
   background-size: cover;
   background-origin: center;
+}
+.card-container .team-link {
+  transition: all 300ms ease;
+}
+.card-container .team-link:hover {
+  transform: scale(1.08);
 }
 .card-container #n1 {
   background-image: url("../../dist/res/daniel.jpg");
@@ -376,12 +428,19 @@ div.card p {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+p.green {
+  color: #4ce274;
+}
 div.card-image {
   width: 100%;
   height: 55%;
   min-height: 300px;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
+}
+div.splash {
+  padding-top: 25%;
+  height: 100%;
 }
 button {
   min-width: 210px;
@@ -396,8 +455,11 @@ button {
   cursor: pointer;
   transition: all 200ms ease;
 }
+button:focus {
+  outline: none;
+}
 button.green {
-  background: #4CE274;
+  background: #4ce274;
 }
 button.green:hover {
   background: #FFF;
