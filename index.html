@@ -113,7 +113,7 @@
 	<section id="portfolio" >
 			<a href="portfolio.html"><button class="light">View Portfolio</button></a>
 	</section>
-	<section class="team">
+	<section id="team">
 		<span>
 			<h1 class="title">Team</h1>
 		</span>
@@ -149,22 +149,26 @@
 		</div>
 	</section>
 	<section id="contact">
-		<h1 class="title white">Contact</h1>
-		<div class="card-container">
-			<input class="normal" id="name" placeholder="Full Name"></input>
-			<input class="normal" id="email" placeholder="Email"></input>
-		</div>
-		<div class="card-container">
-			<input class="normal" id="phone" placeholder="Phone Number"></input>
-			<input class="normal" id="budget" placeholder="Budget"></input>
-		</div>
+		<form action="contact.php" method="post">
+			<h1 class="title white">Contact</h1>
+			<div class="card-container">
+				<input type="text" class="normal" id="name" name="fullname" placeholder="Full Name" required></input>
+				<input type="email" class="normal" id="email" name="email" placeholder="Email" required></input>
+			</div>
+			<div class="card-container">
+				<input type="tel" class="normal" id="phone" name="phone" placeholder="Phone Number"></input>
+				<input type="text" class="normal" id="budget" name="budget" placeholder="Budget"></input>
+			</div>
 
-		<div class="card-container">
-			<textarea class="big" id="order" placeholder="Tell us what you want us to create for you."></textarea>
-		</div>
-		<div class="card-container">
-			<button class="green">send</button>
-		</div>
+			<div class="card-container">
+				<textarea class="big" id="order" name="message" id="i-message" class="input" placeholder="What do you want to ask us?" required></textarea>
+			</div>
+			<div class="card-container">
+				<button class="green">send</button>
+			</div>
+		</form>
+
+		
 	</section>
 
 	<footer>&copy 2017 Hall Technologies</footer>

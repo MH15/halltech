@@ -322,7 +322,7 @@ header .item:hover .popout {
 }
 section {
   margin: 0 auto;
-  widht: 100%;
+  width: 100%;
 }
 section#intro {
   margin: 0 auto;
@@ -346,6 +346,9 @@ section#contact {
 section#content {
   padding-top: 30px;
   text-align: center;
+}
+section#team {
+  padding-bottom: 100px;
 }
 .card-container {
   width: 100%;
