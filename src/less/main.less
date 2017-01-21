@@ -272,8 +272,8 @@ section#team {
 		// }
 
 		div.big {
-			min-height: 440px;
-			min-width:	470px;
+			width: 100%;
+			min-height: 375px;
 			border-radius: 9px;
 			border-bottom-left-radius: 0;
 			border-bottom-right-radius: 0;
@@ -281,6 +281,7 @@ section#team {
 		}
 
 			.card-image {
+				width: 100%;
 				background-size: cover;
 				background-origin: center;
 			}
@@ -312,6 +313,17 @@ section#team {
 			}
 			#n7 {
 			  background-image: url("../../dist/res/startup.jpg");
+			}
+			#n8 {
+				background-image: url("../../dist/res/cubeworld.png");
+			}
+			#n9 {
+				background-image: url("../../dist/res/dc.png");
+				background-position: center;
+				background-size: cover;
+			}
+			#n10 {
+				background-image: url("../../dist/res/rad.png");
 			}
 
 			input, textarea {
@@ -382,11 +394,6 @@ div.splash {
 	height: 100%;
 }
 
-div.row {
-	width: 100%:
-	display: flex;
-}
-
 button {
   min-width: 210px;
   margin: 0 auto;
@@ -394,7 +401,7 @@ button {
   padding-bottom: 17px;
   font-size: 20px;
   border-radius: 29px;
-  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
   border: none;
   verticle-align: middle;
   cursor: pointer;
@@ -417,13 +424,52 @@ button.green:hover {
 }
 
 button:hover {
-  box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.4);
   background: #d5d6dd
 }
 
 section.portfolio.button-light {
   background: #FFF;
   color: #000;
+}
+
+//Modals
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 //buttons
