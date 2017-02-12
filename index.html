@@ -85,7 +85,7 @@
 			<i class="material-icons">keyboard_arrow_down</i>
 		</div> -->
 		<div class="splash">
-			<h1 class="splash white">Hall Tech</h1>
+			<h1 class="splash white">Native Tech</h1>
 			 
 		</div>
 
@@ -94,7 +94,7 @@
 	<section id="intro" class="">
 		<h1 class="title">Who we are</h1>
 		<div class="card-container full-width flex fl-center">
-			<article>Hall Technologies just started off as an idea. A hope in the minds of a few independent web developers to provide people with professional, quality websites. Now it is a reality. Spanning two continents, we work to give our clients what they need. Whether it be a family business, a school, or a large corporation, we will always put our best foot forward in ensuring the quality you deserve.</article>
+			<article>Native Tech started off as just an idea. A hope in the minds of a few independent web developers to provide people with professional, quality websites. Now it is a reality. Spanning two continents, we work to give our clients what they need. Whether it be a family business, a school, or a large corporation, we will always put our best foot forward in ensuring the quality you deserve.</article>
 		</div>
 	</section>
 	<section id="intro" class="">
@@ -122,43 +122,28 @@
 			<h1 class="title">Team</h1>
 		</span>
 		<div class="card-container full-width flex fl-center">
-				<h1 class="title">Portfolio</h1>
-			<!-- Trigger/Open The Modal -->
-			<button id="myBtn">Open Modal</button>
-
-			<!-- The Modal -->
-			<div id="myModal" class="modal">
-
-		  	<!-- Modal content -->
-		  	<div class="modal-content">
-		    <span class="close">&times;</span>
-		    <p>Some text in the Modal..</p>
-		  </div>
-
-		</div>
-
-			<div class="card">
-				<div class="card-image" id="n1"></div>
-				<h2>Daniel Oltmanns</h2>
-				<p>Full Stack</p>
-				<p>Germany</p>
-				<p class="green team-link">@daniel</p>
-			</div>
-			<div class="card">
+					<div class="card" id="profile-card">
+						<div class="card-image" id="n1"></div>
+						<h2>Daniel Oltmanns</h2>
+						<p>Full Stack</p>
+						<p>Germany</p>
+						<p class="green team-link" id="a">@daniel</p>
+					</div>
+			<div class="card" id="profile-card">
 				<div class="card-image" id="n2"></div>
 				<h2>Peter Dunce</h2>
 				<p>Full Stack</p>
 				<p>USA</p>
 				<p class="green team-link">@peter</p>
 			</div>
-			<div class="card">
+			<div class="card" id="profile-card">
 				<div class="card-image" id="n3"></div>
 				<h2>Matthew Hall</h2>
 				<p>Full Stack</p>
 				<p>USA</p>
 				<p class="green team-link">@matthew</p>
 			</div>
-			<div class="card">
+			<div class="card" id="profile-card">
 				<div class="card-image" id="n4"></div>
 				<h2>Ryan Wolf</h2>
 				<p>Full Stack</p>
@@ -168,10 +153,12 @@
 		</div>
 	</section>
 	<section id="contact">
-		<form action="contact.php" method="post">
-			<h1 class="title white">Contact</h1>
-			<div class="card-container">
-				<input type="text" class="normal" id="name" name="fullname" placeholder="Full Name" required></input>
+
+
+ 	<form method="post" action="form.php">
+		        
+		    <div class="card-container">
+				<input type="text" class="normal" id="name" name="name" placeholder="Full Name" required></input>
 				<input type="email" class="normal" id="email" name="email" placeholder="Email" required></input>
 			</div>
 			<div class="card-container">
@@ -180,13 +167,13 @@
 			</div>
 
 			<div class="card-container">
-				<textarea class="big" id="order" name="message" id="i-message" class="input" placeholder="What do you want to ask us?" required></textarea>
+				<textarea class="big" id="order" name="message" id="message" class="input" placeholder="What do you want to ask us?" required></textarea>
 			</div>
 			<div class="card-container">
-				<button class="green">Get a Quote</button>
+				<button class = "green" id="submit" name="submit" type="submit" >Get a Quote</button>
 			</div>
+		        
 		</form>
-
 		
 	</section>
 

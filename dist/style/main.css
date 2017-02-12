@@ -81,14 +81,14 @@ h1.splash {
   font-weight: 100;
 }
 article {
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 40px;
   padding-left: 18%;
   padding-right: 18%;
   width: 100%;
-  line-height: 2;
+  line-height: 1.9;
   font-weight: 100;
-  font-size: 32px;
+  font-size: 28px;
 }
 a {
   margin: 0 px;
@@ -365,7 +365,6 @@ section#team {
   text-align: center;
   border-radius: 9px;
   box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
   transition: all 200ms ease;
 }
 .card-container div.big {
@@ -507,48 +506,4 @@ button:hover {
 section.portfolio.button-light {
   background: #FFF;
   color: #000;
-}
-/* The Modal (background) */
-.modal {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: #000000;
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
-}
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  /* Could be more or less, depending on screen size */
-}
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
 }
