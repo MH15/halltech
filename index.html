@@ -34,7 +34,7 @@
 		<div class="item-shell">
 			<div class="item">
 				<div class="button">
-					<i class="material-icons">person</i>
+					<i class="material-icons">view_carousel</i>
 				</div>
 				
 				<div class="popout">
@@ -50,7 +50,7 @@
 				</div>
 				
 				<div class="popout">
-					<div class="image" id="n1"></div>
+					<div class="image" id="n2"></div>
 					<div class="text">
 						<div>Meet The Team</div>
 					</div>
@@ -64,13 +64,13 @@
 				<div class="popout">
 					<div class="image" id="n3"></div>
 					<div class="text flex">
-						<div data-balloon="@halltech" data-balloon-pos="up">
+						<div data-balloon="@nativetech" data-balloon-pos="up">
 							<img src="dist/res/social/twitter.svg" width="40">
 						</div>
-						<div data-balloon="I'm a tooltip." data-balloon-pos="up">
+						<div data-balloon="Native Tech" data-balloon-pos="up">
 							<img src="dist/res/social/github.svg" width="40">
 						</div>
-						<div data-balloon="I'm a tooltip." data-balloon-pos="up">
+						<div data-balloon="Native Tech" data-balloon-pos="up">
 							<img src="dist/res/social/github.svg" width="40">
 						</div>
 					</div>
@@ -122,31 +122,31 @@
 			<h1 class="title">Team</h1>
 		</span>
 		<div class="card-container full-width flex fl-center">
-					<div class="card" id="profile-card">
-						<div class="card-image" id="n1"></div>
-						<h2>Daniel Oltmanns</h2>
-						<p>Full Stack</p>
-						<p>Germany</p>
-						<p class="green team-link" id="a">@daniel</p>
-					</div>
+				<div class="card" id="profile-card">
+					<div class="card-image" id="n1"></div>
+					<h2>Daniel Oltmanns</h2>
+					<p><i class="material-icons small">room</i>Full Stack</p>
+					<p>Germany</p>
+					<p class="green team-link" id="a">@daniel</p>
+				</div>
 			<div class="card" id="profile-card">
 				<div class="card-image" id="n2"></div>
-				<h2>Peter Dunce</h2>
-				<p>Full Stack</p>
+				<h2>Peter Hall</h2>
+				<p><i class="material-icons small">room</i>Full Stack</p>
 				<p>USA</p>
 				<p class="green team-link">@peter</p>
 			</div>
 			<div class="card" id="profile-card">
 				<div class="card-image" id="n3"></div>
 				<h2>Matthew Hall</h2>
-				<p>Full Stack</p>
+				<p><i class="material-icons small">room</i>Full Stack</p>
 				<p>USA</p>
 				<p class="green team-link">@matthew</p>
 			</div>
 			<div class="card" id="profile-card">
 				<div class="card-image" id="n4"></div>
 				<h2>Ryan Wolf</h2>
-				<p>Full Stack</p>
+				<p><i class="material-icons small">room</i>Full Stack</p>
 				<p>USA</p>
 				<p class="green team-link">@ryan</p>
 			</div>
@@ -155,29 +155,29 @@
 	<section id="contact">
 
 
- 	<form method="post" action="form.php">
-		        
-		    <div class="card-container">
-				<input type="text" class="normal" id="name" name="name" placeholder="Full Name" required></input>
-				<input type="email" class="normal" id="email" name="email" placeholder="Email" required></input>
-			</div>
-			<div class="card-container">
-				<input type="tel" class="normal" id="phone" name="phone" placeholder="Phone Number"></input>
-				<input type="text" class="normal" id="budget" name="budget" placeholder="Budget"></input>
-			</div>
+ 	<form method="post" action="contact.php">
+	        
+	    <div class="card-container">
+			<input type="text" class="normal" id="name" name="name" placeholder="Full Name" required></input>
+			<input type="email" class="normal" id="email" name="email" placeholder="Email" required></input>
+		</div>
+		<div class="card-container">
+			<input type="tel" class="normal" id="phone" name="phone" placeholder="Phone Number"></input>
+			<input type="text" class="normal" id="budget" name="budget" placeholder="Budget"></input>
+		</div>
 
-			<div class="card-container">
-				<textarea class="big" id="order" name="message" id="message" class="input" placeholder="What do you want to ask us?" required></textarea>
-			</div>
-			<div class="card-container">
-				<button class = "green" id="submit" name="submit" type="submit" >Get a Quote</button>
-			</div>
-		        
-		</form>
+		<div class="card-container">
+			<textarea class="big" id="message" name="message" id="message" class="input" placeholder="What do you want to ask us?" required></textarea>
+		</div>
+		<div class="card-container">
+			<button class = "green" id="submit" name="submit" type="submit" >Get a Quote</button>
+		</div>
+	        
+	</form>
 		
 	</section>
 
-	<footer>&copy 2017 Hall Technologies</footer>
+	<footer>&copy 2017 Native Tech</footer>
 <!-- <script>
    var outer = document.createElement("div");
    outer.style.visibility = "hidden";

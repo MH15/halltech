@@ -183,6 +183,10 @@ footer {
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
+.material-icons.small {
+  margin-right: 5px;
+  font-size: 15px;
+}
 #splash {
   background: url('../res/lights.jpg');
   background-size: cover;
@@ -258,7 +262,8 @@ header .item-shell .item .popout #n1 {
   background-size: cover;
 }
 header .item-shell .item .popout #n2 {
-  background: url("../res/peak.jpg");
+  background: url("../../dist/res/blue.jpg");
+  background-size: cover;
 }
 header .item-shell .item .popout #n3 {
   background: white;
@@ -381,7 +386,9 @@ section#team {
   background-origin: center;
 }
 .card-container .team-link {
+  margin-bottom: 30px;
   transition: all 300ms ease;
+  cursor: pointer;
 }
 .card-container .team-link:hover {
   transform: scale(1.08);
@@ -500,7 +507,7 @@ button.green:hover {
   background: #FFF;
 }
 button:hover {
-  box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
   background: #d5d6dd;
 }
 section.portfolio.button-light {
