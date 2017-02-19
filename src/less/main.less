@@ -54,8 +54,9 @@ body {
 			margin: 0 auto;
 		}
 	}
-
 }
+
+div.s
 
 
 .inner {
@@ -348,6 +349,10 @@ section#team {
 				box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
 			}
 
+			input, textarea:active {
+				outline: none;
+			}
+
 			textarea.big {
 				margin-bottom: 60px;
 				padding: 15px;
@@ -408,32 +413,40 @@ button {
   padding-top: 17px;
   padding-bottom: 17px;
   font-size: 20px;
-  border-radius: 29px;
-  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
   border: none;
+  border-radius: 29px;
+  // box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
   verticle-align: middle;
   cursor: pointer;
   transition: all 200ms ease;
 }
+
 button:focus {
 	outline: none;
-}
-
-button.light {
-	// background: 
 }
 
 button.green {
 	background: @green
 }
 
+button.outline {
+	background:rgba(255, 255, 255, 0);
+	border: 1px solid @white;
+}
+
 button.green:hover {
 	background: #FFF;
 }
 
+button.outline {
+	color: #FFF;
+	background: rgba(255, 255, 255, 0);
+	border: 2px solid #FFF;
+}
+
 button:hover {
-  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
-  background: #d5d6dd
+  // box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
 }
 
 section.portfolio.button-light {

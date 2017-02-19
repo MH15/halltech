@@ -22,9 +22,9 @@
     $mail->Body = $text;
 
     if(!$mail->send()) {
-        echo 'Message was not sent.';
+        header("Location: error.html");
         echo 'Mailer error: ' . $mail->ErrorInfo;
     } else {
-        echo 'Message has been sent.';
+        header("Location: thanks.html");
     }
 ?>
