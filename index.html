@@ -14,10 +14,8 @@
 	<meta name="google" content="notranslate"><!-- Disable Translation -->
 	<meta name="google" content="nositelinkssearchbox"><!-- No Site Search -->
 
-	<meta charset="utf-8"/>
 	<link rel="shortcut icon" href="dist/res/footer_logo.png">
 
-	<script type="text/javascript" src="dist/js/main.js"></script>
 	
 	<!-- CSS -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet"> 
@@ -31,66 +29,52 @@
 </head>
 
 <body>
-	<header class="full-height">
-		<div class="item-shell">
-			<div class="item">
-				<div class="button">
-					<i class="material-icons">view_carousel</i>
-				</div>
-				
-				<div class="popout">
-					<div class="image" id="n1"></div>
-					<div class="text">
-						<div>Portfolio</div>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<div class="button">
-					<i class="material-icons">person</i>
-				</div>
-				
-				<div class="popout">
-					<div class="image" id="n2"></div>
-					<div class="text">
-						<div>Meet The Team</div>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<div class="button">
-					<i class="material-icons">share</i>
-				</div>
-				
-				<div class="popout">
-					<div class="image" id="n3"></div>
-					<div class="text flex">
-						<div data-balloon="@nativetech" data-balloon-pos="up">
-							<img src="dist/res/social/twitter.svg" width="40">
-						</div>
-						<div data-balloon="Native Tech" data-balloon-pos="up">
-							<img src="dist/res/social/github.svg" width="40">
-						</div>
-						<div data-balloon="Native Tech" data-balloon-pos="up">
-							<img src="dist/res/social/github.svg" width="40">
-						</div>
-					</div>
-				</div>
+	
+
+	<header class="full-width" id="flat">
+		<div class="left">
+			<div class="tab" id="close">||</div>
+			<div class="tab">TEAM</div>
+			<div class="tab">PORTFOLIO</div>
+		</div>
+		<div class="right">
+			<div class="tab" id="contact">
+				<button class="small">CONTACT</button>
 			</div>
 		</div>
 	</header>
 
 
+	<!-- <section id="contact-form">
+		<form method="post" action="contact.php">
+			<h2 class="form">Contact</h2>
+			<div id="info">+1 937 846 4465 - info@halltechnologies.co</div> 
+			<div class="row">
+				<input type="text" class="normal" id="name" name="name" placeholder="Full Name" required></input>
+				<input type="email" class="normal" id="email" name="email" placeholder="Email" required></input>
+			</div>
+
+			<div class="row">
+				<input type="tel" class="normal" id="phone" name="phone" placeholder="Phone Number"></input>
+				<input type="text" class="normal" id="budget" name="budget" placeholder="Budget"></input>
+			</div>
+
+			<div class="row">
+				<textarea class="normal big" id="message" name="message" id="message" class="input" placeholder="What do you want to ask us?" required></textarea>
+			</div>
+			<div class="card-container">
+				<button class="outline" id="submit" name="submit" type="submit" >Get a Quote</button>
+			</div> 
+		</form>
+	</section> -->
+
 	<section id="splash" class="full-height">
-		<!-- <div class="scroll">
-			<i class="material-icons">keyboard_arrow_down</i>
-		</div> -->
-		<div class="splash">
-			<h1 class="splash white">Native Tech</h1>
-		</div>
+			<!-- <h1 class="splash white">NATIVE TECH</h1> -->
 
 	</section>
 
+<!-- 	<section class="fade"></section>
+ -->
 	<section id="intro" class="">
 		<h1 class="title">Who we are</h1>
 		<div class="card-container full-width flex fl-center">
@@ -152,56 +136,45 @@
 			</div>
 		</div>
 	</section>
+
 	<section id="contact">
 
+		<div class="full-width flex fl-center">
 
- 	<form method="post" action="contact.php">
-	       <h1 class="title white">Contact</h1>
-	    <div class="card-container">
-			<input type="text" class="normal" id="name" name="name" placeholder="Full Name" required></input>
-			<input type="email" class="normal" id="email" name="email" placeholder="Email" required></input>
-		</div>
-		<div class="card-container">
-			<input type="tel" class="normal" id="phone" name="phone" placeholder="Phone Number"></input>
-			<input type="text" class="normal" id="budget" name="budget" placeholder="Budget"></input>
-		</div>
+			<section id="about">
+			barack
+			</section>
 
-		<div class="card-container">
-			<textarea class="big" id="message" name="message" id="message" class="input" placeholder="What do you want to ask us?" required></textarea>
-		</div>
-		<div class="card-container">
-			<button class = "outline" id="submit" name="submit" type="submit" >Get a Quote</button>
-		</div>
-	        
-	</form>
-		
+			 	<form method="post" action="contact.php">
+				       <h1 class="title white">Contact</h1>
+				    <div class="card-container">
+						<input type="text" class="normal" id="name" name="name" placeholder="Full Name" required></input>
+						<input type="email" class="normal" id="email" name="email" placeholder="Email" required></input>
+					</div>
+					<div class="card-container">
+						<input type="tel" class="normal" id="phone" name="phone" placeholder="Phone Number"></input>
+						<input type="text" class="normal" id="budget" name="budget" placeholder="Budget"></input>
+					</div>
+
+					<div class="card-container">
+						<textarea class="big" id="message" name="message" id="message" class="input" placeholder="What do you want to ask us?" required></textarea>
+					</div>
+					<div class="card-container">
+						<button class = "outline" id="submit" name="submit" type="submit" >Get a Quote</button>
+					</div> 
+				</form>
+
+			</div>
+
+			
 	</section>
 
 	<footer>&copy 2017 Native Tech</footer>
-<!-- <script>
-   var outer = document.createElement("div");
-   outer.style.visibility = "hidden";
-   outer.style.width = "100px";
-   document.body.appendChild(outer);
-   
-   var widthNoScroll = outer.offsetWidth;
-   // force scrollbars
-   outer.style.overflow = "scroll";
-   outer.style."-ms-overflow-style" = scrollbar;
-   
-   // add innerdiv
-   var inner = document.createElement("div");
-   inner.style.width = "100%";
-   outer.appendChild(inner);        
-   
-   var widthWithScroll = inner.offsetWidth;
-   
-   // remove divs
-   outer.parentNode.removeChild(outer);
-   
-   console.warn(widthNoScroll - widthWithScroll);
 
-</script> -->
+
+	<script type="text/javascript" src="dist/js/main.js"></script>
+
+
 </body>
 
 

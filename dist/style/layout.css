@@ -71,14 +71,29 @@ h1.name {
   font-weight: 100;
 }
 h1.white {
-  color: #FFFFFF;
+  color: #E9E9E9;
+  font-weight: bold;
+  opacity: 0.9;
 }
 h1.black {
   color: #181818;
+  text-shadow: 1px 1px 1px #E9E9E9;
 }
 h1.splash {
+  font-family: 'Roboto';
   font-size: 70px;
-  font-weight: 100;
+  font-weight: bold;
+  letter-spacing: .5em;
+  color: #5fbaed;
+  mix-blend-mode: difference;
+}
+h2.form {
+  font-size: 26px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 25px;
+  font-weight: 300;
 }
 article {
   margin-top: 30px;
