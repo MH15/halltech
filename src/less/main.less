@@ -114,31 +114,57 @@ header#flat {
 			padding-left: 10px;
 			padding-right: 10px;
 	
+			// button.small {
+			// 	margin-right: 30px;
+			// 	height: 30px;
+			// 	font-size: 12px;
+			// 	padding: 0px;
+			// 	border: 2px solid @white;
+			// 	background: @black;
+			// 	color: @white;
+			// 	letter-spacing: 0.3em;
+			// 	min-width: 130px;
+			// 	border-radius: 29px;
+			// 	verticle-align: middle;
+			// 	cursor: pointer;
+			// 	transition: all 200ms ease;
+			// 	// background: linear-gradient(45deg, #5fbaed , #79cbd3);
+			// 	// border: none;
+			// 	// color: @white-dark;
+			// 	// border-radius: 13px;
+			// 	// text-align: center;
+			// 	// cursor: pointer;
+			// }
+
+			// button.small:hover {
+			// 	background: @white;
+			// 	color: @black;
+			// }
+
 			button.small {
 				margin-right: 30px;
-				height: 30px;
+				height: 29px;
 				font-size: 12px;
 				padding: 0px;
-				border: 2px solid @white;
-				background: @black;
+				border: none;
+				background: @green;
 				color: @white;
-				letter-spacing: 0.3em;
+				letter-spacing: 0.0em;
 				min-width: 130px;
 				border-radius: 29px;
 				verticle-align: middle;
 				cursor: pointer;
 				transition: all 200ms ease;
-				// background: linear-gradient(45deg, #5fbaed , #79cbd3);
-				// border: none;
-				// color: @white-dark;
-				// border-radius: 13px;
-				// text-align: center;
-				// cursor: pointer;
 			}
-
 			button.small:hover {
-				background: @white;
-				color: @black;
+				box-shadow: 0 1px 10px 4px #4ce27466;
+				transform: scale(1.00);
+				text-indent: none;
+			}
+			button.small:active {
+				outline: none;
+				background: darken(@green, 10%);
+				transform: scale(0.95);
 			}
 		}
 	}	
@@ -311,12 +337,14 @@ section {
 
 section#intro {
 	margin: 0 auto;
-	margin-bottom: 40px;
+	margin-top: 70px;
 	text-align: center;
 	// height: 590px;
 }
 
 section#portfolio {
+	margin-top: 130px;
+	margin-bottom: 110px;
 	height: 350px;
 	padding-top: 144px;
 	background-image: url("../../dist/res/portfolio.jpg");
@@ -428,6 +456,7 @@ section#team {
 				margin-left: 2%;
 				margin-right: 2%;
 				padding: 15px;
+				padidng-left: 10px;
 				width: 40%;
 				min-height: 55px;
 				font-size: 20px;
@@ -504,18 +533,18 @@ button:focus {
 	outline: none;
 }
 
-button.green {
-	background: @green
-}
+// button.green {
+// 	background: @green
+// }
 
 button.outline {
 	background:rgba(255, 255, 255, 0);
 	border: 1px solid @white;
 }
 
-button.green:hover {
-	background: #FFF;
-}
+// button.green:hover {
+// 	background: #FFF;
+// }
 
 button.outline {
 	color: #FFF;
@@ -527,6 +556,32 @@ button.outline:hover {
   // box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
   border-radius: 10px;
 }
+
+button.green {
+				margin-top: 80px;
+				height: 40px;
+				font-size: 18px;
+				padding: 0px;
+				border: none;
+				background: @green;
+				color: @white;
+				letter-spacing: 0.0em;
+				min-width: 160px;
+				border-radius: 29px;
+				verticle-align: middle;
+				cursor: pointer;
+				transition: all 200ms ease;
+			}
+			button.green:hover {
+				box-shadow: 0 1px 10px 4px #4ce27466;
+				transform: scale(1.00);
+				text-indent: none;
+			}
+			button.green:active {
+				outline: none;
+				background: darken(@green, 10%);
+				transform: scale(0.95);
+			}
 
 section.portfolio.button-light {
   background: #FFF;
@@ -587,8 +642,35 @@ section#contact-form {
 
 			.normal:focus {
 				border: 1px solid @green;
+				box-shadow: 0 1px 10px 4px #4ce27466;
 
 			}
+		}
+
+		button {
+			margin-right: 30px;
+			height: 35px;
+			font-size: 12px;
+			padding: 0px;
+			border: none;
+			background: @green;
+			color: @white;
+			letter-spacing: 0.0em;
+			min-width: 130px;
+			border-radius: 29px;
+			verticle-align: middle;
+			cursor: pointer;
+			transition: all 200ms ease;
+		}
+		button:hover {
+			box-shadow: 0 1px 10px 4px #4ce27466;
+			transform: scale(1.00);
+			text-indent: none;
+		}
+		button:focus, button:active {
+			outline: none;
+			background: darken(@green, 10%);
+			transform: scale(0.95);
 		}
 	}
 }

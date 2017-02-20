@@ -103,7 +103,7 @@ article {
   width: 100%;
   line-height: 1.9;
   font-weight: 100;
-  font-size: 28px;
+  font-size: 25px;
 }
 a {
   margin: 0 px;
@@ -127,6 +127,7 @@ section {
   min-height: 100px;
 }
 footer {
+  padding-bottom: 160px;
   width: 100%;
   height: 120px;
   background: #FFFFFF;
