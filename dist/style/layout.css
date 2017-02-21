@@ -86,24 +86,27 @@ h1.splash {
   letter-spacing: .5em;
   color: #5fbaed;
   mix-blend-mode: difference;
+  z-index: 2;
 }
 h2.form {
-  font-size: 26px;
+  font-size: 30px;
   font-family: "Roboto", sans-serif;
   text-align: center;
-  margin-top: 12px;
-  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-bottom: 30px;
   font-weight: 300;
 }
-article {
-  margin-top: 30px;
-  margin-bottom: 40px;
-  padding-left: 18%;
-  padding-right: 18%;
-  width: 100%;
-  line-height: 1.9;
-  font-weight: 100;
-  font-size: 25px;
+h2.display {
+  font-family: 'Source Sans Pro';
+  font-size: 34px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+p.serif {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: 'Merriweather';
+  font-size: 16px;
 }
 a {
   margin: 0 px;
@@ -123,18 +126,33 @@ a {
   width: 100%;
 }
 section {
+  margin: 0 auto;
   width: 100%;
   min-height: 100px;
 }
 footer {
-  padding-bottom: 160px;
-  width: 100%;
-  height: 120px;
-  background: #FFFFFF;
-  line-height: 120px;
+  font-size: 16px;
+  background: #4ce274;
+  width: 203px;
+  height: 50px;
+  margin: 0 auto;
+  line-height: 49px;
+  margin-bottom: 55px;
+  color: #FFFFFF;
   text-align: center;
-  color: #a4a1a1;
-  font-size: 24px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+article {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  padding-left: 18%;
+  padding-right: 18%;
+  width: 100%;
+  line-height: 1.9;
+  font-weight: 100;
+  font-size: 25px;
 }
 .flex {
   display: flex;

@@ -84,28 +84,30 @@ h1.splash {
 	letter-spacing: .5em;
 	color: @qualm-blue;
 	mix-blend-mode: difference;
+	z-index: 2;
 }
 
 h2.form {
-	font-size: 26px;
+	font-size: 30px;
 	font-family: "Roboto", sans-serif;
 	text-align: center;
-	margin-top: 12px;
-	margin-bottom: 25px;
+	margin-top: 25px;
+	margin-bottom: 30px;
 	font-weight: 300;
 }
 
+h2.display {
+	font-family: 'Source Sans Pro';
+	font-size: 34px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
 
-article {
-	margin-top: 30px;
-	margin-bottom: 40px;
-	padding-left: 18%;
-	padding-right: 18%;
-	width: 100%;
-	line-height: 1.9;
-	font-weight: 100;
-	font-size: 25px;
-
+p.serif {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-family: 'Merriweather';
+	font-size: 16px;
 }
 
 a { 
@@ -139,21 +141,16 @@ a {
 }
 
 
-
-
-
-
 // Sections are used for major portions of a page such
 // as a splash screen or the entire text content of the
 // page. Articles are used for other, smaller breakups
 // such as an article in a feed
 section {
+	margin: 0 auto;
 	width: 100%;
 	min-height: 100px;
 
 }
-
-
 
 // Articles are used for smaller elements on the page like
 // a blog post or a paragraph about the team
@@ -162,16 +159,31 @@ section {
 // Footers should appear on every page (excluding webapp 
 // style pages) and contain the same thing on each page
 footer {
-	padding-bottom: 160px;
-	width: 100%;
-	height: 120px;
-	background: @white;
-	line-height: 120px;
+	font-size: 16px;
+	background: #4ce274;
+	width: 203px;
+	height: 50px;
+	margin: 0 auto;
+	line-height: 49px;
+	margin-bottom: 55px;
+	color: #FFFFFF;
 	text-align: center;
-	color: #a4a1a1;
-	font-size: 24px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
 }
 
+article {
+	margin-top: 30px;
+	margin-bottom: 40px;
+	padding-left: 18%;
+	padding-right: 18%;
+	width: 100%;
+	line-height: 1.9;
+	font-weight: 100;
+	font-size: 25px;
+
+}
 
 //  ____  __    ____  _  _      __    __  ____ 
 // (  __)(  )  (  __)( \/ )    (  )  (  )(  _ \
