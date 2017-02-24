@@ -7,6 +7,7 @@ var profileData =  {
 			"name": "Matthew Hall",
 			"location": "Ohio",
 			"companyPostion": "Dope",
+			"image": "n3",
 			"bio": "Peter Hall is a 15 year old cofounder of Hall Technologies and a full stack developer there. He lives in Ohio, USA, and enjoys physics and engineering as well. In his spare time, he likes to run and build 3D printers."
 
 		},
@@ -16,6 +17,7 @@ var profileData =  {
 			"name": "Peter Hall",
 			"location": "Ohio",
 			"companyPostion": "Dope",
+			"image": "n2",
 			"bio": "Peter Hall is a 15 year old cofounder of Hall Technologies and a full stack developer there. He lives in Ohio, USA, and enjoys physics and engineering as well. In his spare time, he likes to run and build 3D printers."
 	
 		},
@@ -25,6 +27,7 @@ var profileData =  {
 			"name": "Daniel Oltmanns",
 			"location": "Germany",
 			"companyPostion": "Dope",
+			"image": "n1",
 			"bio": "Peter Hall is a 15 year old cofounder of Hall Technologies and a full stack developer there. He lives in Ohio, USA, and enjoys physics and engineering as well. In his spare time, he likes to run and build 3D printers."
 	
 		},
@@ -34,6 +37,7 @@ var profileData =  {
 			"name": "Ryan Wolf",
 			"location": "Ohio",
 			"companyPostion": "Dope",
+			"image": "n4",
 			"bio": "Peter Hall is a 15 year old cofounder of Hall Technologies and a full stack developer there. He lives in Ohio, USA, and enjoys physics and engineering as well. In his spare time, he likes to run and build 3D printers."
 	
 		}
@@ -42,7 +46,7 @@ var profileData =  {
 	"template": `
 		<div class="profile-popup">
 			<!--<i class="material-icons close">clear</i>-->
-			<div class="circle" id="n2"></div>
+			<div class="circle" id="{{image}}"></div>
 			<h1 class="card-title">{{name}}</h1>
 			<p class="subtitle">{{companyPostion}}</p>
 			<article>{{bio}}</article>
