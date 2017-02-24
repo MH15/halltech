@@ -3,37 +3,7 @@
 // @import "parallax";
 
 body {
-	// background: black;
-}
-
-.material-icons {
-	font-family: 'Material Icons';
-	font-weight: normal;
-	font-style: normal;
-	font-size: 24px;  /* Preferred icon size */
-	display: inline-block;
-	line-height: 1;
-	text-transform: none;
-	letter-spacing: normal;
-	word-wrap: normal;
-	white-space: nowrap;
-	direction: ltr;
-
-	/* Support for all WebKit browsers. */
-	-webkit-font-smoothing: antialiased;
-	/* Support for Safari and Chrome. */
-	text-rendering: optimizeLegibility;
-
-	/* Support for Firefox. */
-	-moz-osx-font-smoothing: grayscale;
-
-	/* Support for IE. */
-	font-feature-settings: 'liga';
-}
-
-.material-icons.small {
-	margin-right: 5px;
-	font-size: 15px;
+	font-family: "Muli", sans-serif;
 }
 
 #splash {
@@ -58,12 +28,7 @@ header#flat {
 	transition: all 200ms ease;
 	box-shadow: 0px 5px 5px 5px #181818b3;
 	padding-left: @header;
-	z-index: 50;
-
-	font-family: "Roboto", sans-serif !important;
-
-	
-	
+	z-index: 0;
 
 	.left {
 		display: flex;
@@ -101,44 +66,79 @@ header#flat {
 			padding-right: 10px;
 	
 
-			button.small {
-				margin-right: 30px;
-				height: 29px;
-				font-size: 12px;
-				padding: 0px;
-				border: none;
-				background: @green;
-				color: @white;
-				letter-spacing: 0.0em;
-				min-width: 130px;
-				border-radius: 29px;
-				verticle-align: middle;
-				cursor: pointer;
-				transition: all 200ms ease;
-			}
-			button.small:hover {
-				box-shadow: 0 1px 10px 4px #4ce27466;
-				transform: scale(1.00);
-				text-indent: none;
-			}
-			button.small:active {
-				outline: none;
-				background: darken(@green, 10%);
-				transform: scale(0.95);
-			}
+			
 		}
 	}	
 }
 
+// Intro Section
+
 section#intro {
 	margin: 0 auto;
-	margin-top: 70px;
+	margin-top: 45px;
 	text-align: center;
 	// height: 590px;
 }
 
+// Team Section
+section#team {
+
+	.center {
+		width: 100%;
+		height: 600px;
+		margin: 0 auto;
+		margin-top: 60px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.card {
+		margin: 30px;
+		margin-top: 65px;
+		height: auto;
+		width: 15%;
+		background: @white;
+		color: #a4a1a1;
+		text-align: center;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		transition: all 300ms ease;
+	}
+
+	.card:hover {
+		transform: none;
+		cursor: pointer;
+	}
+
+	.card-image {
+		width: 100%;
+		background-size: cover;
+		background-origin: center;
+	}
+
+	.team-link {
+		margin-bottom: 30px;
+		transition: all 300ms ease;
+		cursor: pointer;
+		color: @green;
+	}
+
+	#n1 {
+	  background-image: url("../../dist/res/daniel.jpg");
+	}
+	#n2 {
+	  background-image: url("../../dist/res/peter.jpg");
+	}
+	#n3 {
+	  background-image: url("../../dist/res/matthew.jpg");
+	}
+	#n4 {
+	  background-image: url("../../dist/res/ryan.jpg");
+	}
+
+}
+
 section#portfolio {
-	margin-top: 130px;
+	margin-top: 35px;
 	margin-bottom: 110px;
 	height: auto;
 	width: 100% !important;
@@ -154,14 +154,11 @@ section#portfolio {
 	justify-content: space-around;
 	align-items: center;
 	flex-wrap: nowrap;
-	
-
-
 
 	.poster {
 		margin-left: 12px;
 		margin-right: 12px;
-		height: 650px;
+		height: 575px;
 		width: 300px;
 		flex-shrink: 0;
 		background: white;
@@ -179,23 +176,25 @@ section#portfolio {
 			box-shadow: 0 1px 10px 4px rgba(0, 0, 0, 0.2);
 		}
 
-		
-
 		#n1 {
-			  background-image: url("../../dist/res/small business.jpg");
+			  background-image: url("../../dist/res/cubeworld.png");
+		  background-size: cover;
 		}
 		#n2 {
-		  background-image: url("../../dist/res/big business.png");
+		  background-image: url("../../dist/res/skeleton-plus.jpg");
+		  background-size: cover;
 		}
 		#n3 {
-		  background-image: url("../../dist/res/startup.jpg");
+		  background-image: url("../../dist/res/crystal-learning.jpg");
+		  background-size: cover;
 		}
 		#n4 {
-			background-image: url("../../dist/res/cubeworld.png");
+			background-image: url("../../dist/res/unit circle.png");
+		  background-size: cover;
 		}
 		#n5 {
 			background-image: url("../../dist/res/dc.png");
-
+		  background-size: cover;
 		}
 
 	}
@@ -216,18 +215,6 @@ section#portfolio {
 		background: #662621;
 
 	}
-
-	
-
-
-}
-
-section#contact {
-	padding-top: 30px;
-	padding-bottom: 100px;
-	min-height: 700px;
-	background: @white;
-	background-size: cover;
 }
 
 section#content {
@@ -235,8 +222,111 @@ section#content {
 	text-align: center;
 }
 
-section#team {
-	padding-bottom: 100px;
+section#profile {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 400ms all ease;
+
+	visibility: hidden;
+	opacity: 0;
+
+	div#transferDiv {
+		margin-bottom: 10%;
+		z-index: 400;
+		width: 35%;
+		max-height: 80%;
+
+		div.profile-popup {
+			margin: 0 auto;
+			padding: 10px;
+			background: @white;
+			width: 100%;
+			height: 100%;
+			box-shadow: @default-shadow;
+			z-index: 400;
+		}
+
+		div.social {
+			text-align: center;
+			margin-bottom: 30px;
+		}
+
+		.icon {
+			width: 35px;
+			height: 35px;
+			margin-right: 10px;
+			margin-left: 10px;
+			cursor: pointer;
+			transition: all 200ms ease;
+		}
+
+		.icon:hover {
+			transform: scale(.9);
+		}
+
+		.close {
+			margin: 10px;
+			float: right;
+			font-size: 40px;
+			cursor: pointer;
+			transition: 200ms all ease;
+		}
+
+		.close:hover {
+			transform: scale(.9);
+		}
+
+		p {
+			text-align: center;
+			font-size: 20px;
+			margin-top: 0px;
+			margin-bottom: 20px;
+		}
+
+		p.subtitle {
+			margin-top: 25px;
+			margin-bottom: 10px;
+			text-align: center;
+			font-size: 18px;
+			color: #a4a1a1;
+		}
+
+		#n1 {
+		  background-image: url("../../dist/res/daniel.jpg");
+		  background-size: cover;
+		}
+		#n2 {
+		  background-image: url("../../dist/res/peter.jpg");
+		  background-size: cover;
+		}
+		#n3 {
+		  background-image: url("../../dist/res/matthew.jpg");
+		  background-size: cover;
+		}
+		#n4 {
+		  background-image: url("../../dist/res/ryan.jpg");
+		  background-size: cover;
+		}
+
+		.circle {
+			margin: 0 auto;
+			margin-top: 40px;
+			width: 250px;
+			height: 250px;
+			border-radius: 50%;
+			box-shadow: @default-shadow;
+			transition: 200ms all ease;
+		}
+	}
+
+
+	
 }
 
 .card-container {
@@ -244,109 +334,106 @@ section#team {
 	text-align: center;
 	flex-wrap: wrap;
 
-		.card {
-			margin: 60px;
-			min-height: 200px;
-			min-width: 280px;
-			// display: inline-block;
-			color: #a4a1a1;
-			text-align: center;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-			transition: all 300ms ease;
-		}
+	.card {
+		margin: 60px;
+		min-height: 200px;
+		min-width: 280px;
+		// display: inline-block;
+		color: #a4a1a1;
+		text-align: center;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		transition: all 300ms ease;
+	}
 
-		.card:hover {
-			transform: perspective(500px) translateZ(30px);
-			cursor: pointer;
-		}
+	.card:hover {
+		transform: perspective(500px) translateZ(30px);
+		cursor: pointer;
+	}
 
-		
+	div.big {
+		width: 100%;
+		min-height: 375px;
+		border-radius: 2px;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		transition: all 200ms ease;
+	}
 
-		
+	.card-image {
+		width: 100%;
+		background-size: cover;
+		background-origin: center;
+	}
 
-		div.big {
-			width: 100%;
-			min-height: 375px;
-			border-radius: 2px;
-			border-bottom-left-radius: 0;
-			border-bottom-right-radius: 0;
-			transition: all 200ms ease;
-		}
+	.team-link {
+		margin-bottom: 30px;
+		transition: all 300ms ease;
+		cursor: pointer;
+		color: @green;
+	}
 
-			.card-image {
-				width: 100%;
-				background-size: cover;
-				background-origin: center;
-			}
+	.team-link:hover {
+		transform: scale(1.08);
+	}
+	#n1 {
+	  background-image: url("../../dist/res/daniel.jpg");
+	}
+	#n2 {
+	  background-image: url("../../dist/res/peter.jpg");
+	}
+	#n3 {
+	  background-image: url("../../dist/res/matthew.jpg");
+	}
+	#n4 {
+	  background-image: url("../../dist/res/ryan.jpg");
+	}
+	#n5 {
+	  background-image: url("../../dist/res/small business.jpg");
+	}
+	#n6 {
+	  background-image: url("../../dist/res/big business.png");
+	}
+	#n7 {
+	  background-image: url("../../dist/res/startup.jpg");
+	}
+	#n8 {
+		background-image: url("../../dist/res/cubeworld.png");
+	}
+	#n9 {
+		background-image: url("../../dist/res/dc.png");
+		background-position: center;
+		background-size: cover;
+	}
+	#n10 {
+		background-image: url("../../dist/res/rad.png");
+	}
 
-			.team-link {
-				margin-bottom: 30px;
-				transition: all 300ms ease;
-				cursor: pointer;
-			}
+	input, textarea {
+		margin-top: 30px;
+		margin-bottom: 30px;
+		margin-left: 2%;
+		margin-right: 2%;
+		padding: 15px;
+		padidng-left: 10px;
+		width: 40%;
+		min-height: 55px;
+		font-size: 20px;
+		border: none;
+		border-radius: 2px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	}
 
-			.team-link:hover {
-				transform: scale(1.08);
-			}
-			#n1 {
-			  background-image: url("../../dist/res/daniel.jpg");
-			}
-			#n2 {
-			  background-image: url("../../dist/res/peter.jpg");
-			}
-			#n3 {
-			  background-image: url("../../dist/res/matthew.jpg");
-			}
-			#n4 {
-			  background-image: url("../../dist/res/ryan.jpg");
-			}
-			#n5 {
-			  background-image: url("../../dist/res/small business.jpg");
-			}
-			#n6 {
-			  background-image: url("../../dist/res/big business.png");
-			}
-			#n7 {
-			  background-image: url("../../dist/res/startup.jpg");
-			}
-			#n8 {
-				background-image: url("../../dist/res/cubeworld.png");
-			}
-			#n9 {
-				background-image: url("../../dist/res/dc.png");
-				background-position: center;
-				background-size: cover;
-			}
-			#n10 {
-				background-image: url("../../dist/res/rad.png");
-			}
+	input, textarea:active {
+		outline: none;
+	}
 
-			input, textarea {
-				margin-top: 30px;
-				margin-bottom: 30px;
-				margin-left: 2%;
-				margin-right: 2%;
-				padding: 15px;
-				padidng-left: 10px;
-				width: 40%;
-				min-height: 55px;
-				font-size: 20px;
-				border: none;
-				border-radius: 2px;
-				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-			}
-
-			input, textarea:active {
-				outline: none;
-			}
-
-			textarea.big {
-				margin-bottom: 60px;
-				padding: 15px;
-				width: 84%;
-				min-height: 400px;
-				font-size: 20px;
-			}
+	textarea.big {
+		margin-bottom: 60px;
+		padding: 15px;
+		width: 84%;
+		min-height: 400px;
+		font-size: 20px;
+	}
 }
 div.card h2 {
   font-size: 30px;
@@ -359,13 +446,9 @@ div.card p {
   margin-bottom: 15px;
 }
 
-p.green {
-	color: @green;
-}
-
 div.card-image {
   width: 100%;
-  height: 55%;
+  height: 60%;
   min-height: 300px;
   border-top-right-radius: 2px;
   border-top-left-radius: 2px;
@@ -375,73 +458,6 @@ div.card.row {
 	text-align: center;
 }
 
-button.outline {
-  min-width: 210px;
-  margin: 0 auto;
-  padding-top: 17px;
-  padding-bottom: 17px;
-  font-size: 20px;
-  border: none;
-  border-radius: 29px;
-  // box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
-  verticle-align: middle;
-  cursor: pointer;
-  transition: all 200ms ease;
-}
-
-button:focus {
-	outline: none;
-}
-
-// button.green {
-// 	background: @green
-// }
-
-button.outline {
-	background:rgba(255, 255, 255, 0);
-	border: 1px solid @white;
-}
-
-// button.green:hover {
-// 	background: #FFF;
-// }
-
-button.outline {
-	color: #FFF;
-	background: rgba(255, 255, 255, 0);
-	border: 2px solid #FFF;
-}
-
-button.outline:hover {
-  // box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
-}
-
-button.green {
-				margin-top: 80px;
-				height: 40px;
-				font-size: 18px;
-				padding: 0px;
-				border: none;
-				background: @green;
-				color: @white;
-				letter-spacing: 0.0em;
-				min-width: 160px;
-				border-radius: 29px;
-				verticle-align: middle;
-				cursor: pointer;
-				transition: all 200ms ease;
-			}
-			button.green:hover {
-				box-shadow: 0 1px 10px 4px #4ce27466;
-				transform: scale(1.00);
-				text-indent: none;
-			}
-			button.green:active {
-				outline: none;
-				background: darken(@green, 10%);
-				transform: scale(0.95);
-			}
 
 section.portfolio.button-light {
   background: #FFF;
@@ -482,14 +498,14 @@ section#contact-form {
 		box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 
-		button {
-			margin: 0px;
-		}
-
 		#info {
 			.full-width;
 			text-align: center;
 			margin-bottom: 20px;
+		}
+		button {
+			margin-top: 0;
+			margin-bottom: 10px;
 		}
 
 		.row {
@@ -525,32 +541,11 @@ section#contact-form {
 				font-size: 14px;
 			}
 		}
-
-		button {
-			margin-bottom: 15px;
-			height: 35px;
-			font-size: 12px;
-			padding: 0px;
-			border: none;
-			background: @green;
-			color: @white;
-			letter-spacing: 0.0em;
-			min-width: 130px;
-			border-radius: 29px;
-			cursor: pointer;
-			transition: all 200ms ease;
-		}
-		button:hover {
-			box-shadow: 0 1px 10px 4px #4ce27466;
-			text-indent: none;
-		}
-		button:focus, button:active {
-			outline: none;
-			background: darken(@green, 10%);
-			transform: scale(0.95);
-		}
 	}
+
 }
+
+
 
 div#blackout {
 	position: fixed;
@@ -559,6 +554,19 @@ div#blackout {
 	.full-width;
 	.full-height;
 	z-index: 99;
+	background: rgba(0,0,0,1);
+	opacity: 0;
+	visibility: hidden;
+	transition: 200ms all ease;
+}
+
+div#profileBlackout {
+	position: fixed;
+	left: 0;
+	top: 0;
+	.full-width;
+	.full-height;
+	z-index: 103;
 	background: rgba(0,0,0,1);
 	opacity: 0;
 	visibility: hidden;

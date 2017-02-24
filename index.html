@@ -15,37 +15,35 @@
 	<meta name="google" content="nositelinkssearchbox"><!-- No Site Search -->
 
 	<link rel="shortcut icon" href="dist/res/footer_logo.png">
-
 	
 	<!-- CSS -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather|Source+Sans+Pro:700i" rel="stylesheet"> 
-
-
+	<link href="https://fonts.googleapis.com/css?family=Muli:400,600,800" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="dist/lib/balloon.css">
 	<link rel="stylesheet" type="text/css" href="dist/style/main.css">
+
+
 
 </head>
 
 <body>
 	
-
 	<header class="full-width" id="flat">
 		<div class="left">
 			<div class="tab" id="close">||</div>
-			<div class="tab">TEAM</div>
-			<div class="tab">PORTFOLIO</div>
+			<a href="#team"><div class="tab">TEAM</div></a>
+			<a href="#portfolio"><div class="tab">PORTFOLIO</div></a>
 		</div>
 		<div class="right">
 			<div class="tab" id="contact">
-				<button class="small" id="button">CONTACT</button>
+				<button class="header" id="button">CONTACT</button>
 			</div>
 		</div>
 	</header>
-
 
 	<section id="contact-form">
 		<form method="post" action="contact.php" id="form">
@@ -65,29 +63,88 @@
 				<textarea class="normal big" id="message" name="message" id="message" class="input" placeholder="What do you want to ask us?" required></textarea>
 			</div>
 			<div class="card-container">
-				<button class="outline" id="submit" name="submit" type="submit">Get a Quote</button>
+				<button class="green" id="submit" name="submit" type="submit">Get a Quote</button>
 			</div> 
 		</form>
 	<div id="blackout"></div>
 	</section>
 
 	<section id="splash" class="full-height">
-			<h1 class="splash">NATIVE TECH</h1>
-
+			<h1 class="splash">HALL TECH</h1>
 	</section>
 
 <!-- 	<section class="fade"></section>
  -->
 	<section id="intro" class="">
-		<h1 class="title">Who we are</h1>
+		<h3 class="small">Who we are</h3>
 		<div class="card-container full-width flex fl-center">
 			<article>Native Tech started off as just an idea. A hope in the minds of a few independent web developers to provide people with professional, high quality websites. Now it is a reality. Spanning two continents, we work to give our clients what they need. Whether it be a family business, a school, or a large corporation, we will always put our best foot forward in ensuring the quality you deserve.</article>
 		</div>
 	</section>
 
-	
+
+	<section id="profile">
+		<div id="transferDiv"></div>
+		<div id="profileBlackout"></div>
+	</section>
+
+	<!-- <section id="profile">
+		<div class="sign">
+			<i class="material-icons close">clear</i>
+			<div class="circle" id="n2"></div>
+			<h1 class="card-title">Peter Hall</h1>
+			<p class="subtitle">Company Position</p>
+			<article>Peter Hall is a 15 year old cofounder of Hall Technologies and a full stack developer there. He lives in Ohio, USA, and enjoys physics and engineering as well. In his spare time, he likes to run and build 3D printers.</article>
+			<div class="social">
+				<span>
+					<img class="icon" src="dist/res/social/twitter.svg" width="25">
+				</span>
+				<span>
+					<img class="icon" src="dist/res/social/github.svg" width="25">
+				</span>
+			</div>
+		</div>
+	</section> -->
+
+	<section id="team">
+		<h3 class="small">Team</h3>
+		<div class="card-container full-width flex fl-center">
+			<div class="card daniel" id="profile-card">
+				<div class="card-image" id="n1"></div>
+				<h2>Daniel Oltmanns</h2>
+				<p>Full Stack</p>
+				<p><i class="material-icons small">room</i>Germany</p>
+				<button class="small uniqueJavaScriptName" id="nameDaniel">More</button>
+			</div>
+			<div class="card peter" id="profile-card">
+				<div class="card-image" id="n2"></div>
+				<h2>Peter Hall</h2>
+				<p>Full Stack</p>
+				<p><i class="material-icons small">room</i>USA</p>
+				<button class="small uniqueJavaScriptName" id="namePeter">More</button>
+			</div>
+			<div class="card matt" id="profile-card">
+				<div class="card-image" id="n3"></div>
+				<h2>Matthew Hall</h2>
+				<p>Full Stack</p>
+				<p><i class="material-icons small">room</i>USA</p>
+				<button class="small uniqueJavaScriptName" id="nameMatthew">More</button>
+			</div>
+			<div class="card ryan" id="profile-card">
+				<div class="card-image" id="n4"></div>
+				<h2>Ryan Wolf</h2>
+				<p>Full Stack</p>
+				<p><i class="material-icons small">room</i>USA</p>
+				<button class="small uniqueJavaScriptName" id="nameRyan">More</button>
+			</div>
+		</div>
+	</section>
+
+
+
+
 	<section id="intro" class="">
-		<h1 class="title">Who we work for.</h1>
+		<h3 class="small">Who We Work For</h3>
 		<div class="card-container full-width flex fl-center">
 			<div class="card">
 				<div class="card-image" id="n5"></div>
@@ -105,88 +162,43 @@
 	</section>
 
 	<section id="content">
-		<h1 class="title">What We Do</h1>
+		<h3 class="small">What We Do</h3>
 		<article>We specialize in both front and back end web development. We are experienced in multiple languages, namely HTML, CSS, LESS, JavaScript, node.js, PHP, and Python. We will use this knowledge to craft websites that are not just beautiful, but productive, secure, and interactive as well. With a combined 15 years of experience, we will make this process as efficent as possible in delivering your request.
 	</section>
 
+	<h3 class="small" id="portfolio">Portfolio</h3>
 	<section id="portfolio" >
-			<div class="poster" id="f1">
-				<div class="poster-image" id="n1"></div>
-				<h2 class="display">CUBEWORLD</h2>
-				<p class="serif">Full Stack</p>
-			</div>
-			<div class="poster" id="f2">
-				<div class="poster-image" id="n2"></div>
-				<h2 class="display">Daniel Oltmanns</h2>
-				<p class="serif">Full Stack</p>
-			</div>
-			<div class="poster" id="f3">
-				<div class="poster-image" id="n3"></div>
-				<h2 class="display">Daniel Oltmanns</h2>
-				<p class="serif">Full Stack</p>
-			</div>
-			<div class="poster" id="f4">
-				<div class="poster-image" id="n4"></div>
-				<h2 class="display">Daniel Oltmanns</h2>
-				<p class="serif">Full Stack</p>
-			</div>
-			<div class="poster" id="f5">
-				<div class="poster-image" id="n5"></div>
-				<h2 class="display">Daniel Oltmanns</h2>
-				<p class="serif">Full Stack</p>
-			</div>
-			
-			
-			
-
-	</section>
-
-	<section id="team">
-		<span>
-			<h1 class="title">Team</h1>
-		</span>
-		<div class="card-container full-width flex fl-center">
-				<div class="card" id="profile-card">
-					<div class="card-image" id="n1"></div>
-					<h2>Daniel Oltmanns</h2>
-					<p>Full Stack</p>
-					<p><i class="material-icons small">room</i>Germany</p>
-					<p class="green team-link" id="a">@daniel</p>
-				</div>
-			<div class="card" id="profile-card">
-				<div class="card-image" id="n2"></div>
-				<h2>Peter Hall</h2>
-				<p>Full Stack</p>
-				<p><i class="material-icons small">room</i>USA</p>
-				<p class="green team-link">@peter</p>
-			</div>
-			<div class="card" id="profile-card">
-				<div class="card-image" id="n3"></div>
-				<h2>Matthew Hall</h2>
-				<p>Full Stack</p>
-				<p><i class="material-icons small">room</i>USA</p>
-				<p class="green team-link">@matthew</p>
-			</div>
-			<div class="card" id="profile-card">
-				<div class="card-image" id="n4"></div>
-				<h2>Ryan Wolf</h2>
-				<p>Full Stack</p>
-				<p><i class="material-icons small">room</i>USA</p>
-				<p class="green team-link">@ryan</p>
-			</div>
+		<div class="poster" id="f1">
+			<div class="poster-image" id="n1"></div>
+			<a href="http://apps.halltechnologies.co/Cube%20World/index.html"><h2 class="display">CUBEWORLD</h2></a>
+			<p class="serif">A 2D game made in JavaScript.</p>
 		</div>
-		<div class="card-container">
-			<a href="team.html"><button class="green">See More</button></a>
+		<div class="poster" id="f2">
+			<div class="poster-image" id="n2"></div>
+			<a href="http://oltmannsdaniel.github.io/skeleton-plus/"><h2 class="display">SKELETON PLUS</h2></a>
+			<p class="serif">A dead simple and responsive boilerplate.</p>
 		</div>
+		<div class="poster" id="f3">
+			<div class="poster-image" id="n3"></div>
+			<a href="https://github.com/oltmannsdaniel/crystal-learning.cr"><h2 class="display">CRYSTAL LEARNING</h2></a>
+			<p class="serif">A machine learnign library.</p>
+		</div>
+		<div class="poster" id="f4">
+			<div class="poster-image" id="n4"></div>
+			<a href="https://mh15.github.io/rad/"><h2 class="display">UNIT CIRCLE</h2></a>
+			<p class="serif">An interactive math tool.</p>
+		</div>
+		<!-- <div class="poster" id="f5">
+			<div class="poster-image" id="n5"></div>
+			<h2 class="display">Daniel Oltmanns</h2>
+			<p class="serif">Full Stack</p>
+		</div> -->
 	</section>
-
 
 	<footer>&copy 2017 Native Tech</footer>
 
-
+	<script type="text/javascript" src="dist/lib/mustache.js"></script>
+	<script type="text/javascript" src="data/profileData.js"></script>
 	<script type="text/javascript" src="dist/js/main.js"></script>
 
-
 </body>
-
-
