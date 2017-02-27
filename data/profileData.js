@@ -44,7 +44,6 @@ var profileData =  {
 	},
 
 	"template": `
-		<div class="profile-popup">
 			<!--<i class="material-icons close">clear</i>-->
 			<div class="circle" id="{{image}}"></div>
 			<h1 class="card-title">{{name}}</h1>
@@ -58,7 +57,6 @@ var profileData =  {
 					<img class="icon" src="dist/res/social/github.svg" width="25">
 				</span>
 			</div>
-		</div>
 		
 		`
 }

@@ -7,12 +7,56 @@ body {
 }
 
 #splash {
-	background: url('../res/splash.jpg');
+	background: url('../res/stars.jpg');
 	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	z-index: 1;
+	display: flex;
+	align-items: center;
+
+	.splash-row {
+		width: 100%;
+		flex: 1;
+	}
+
+
+	#logo {
+		width: 200px;
+		height: 200px;
+		margin: 0 auto;
+		text-align: center;
+		mix-blend-mode: difference;
+		background: url("../res/1000x1000.png");
+		background-size: cover;
+		margin-bottom: 40px;
+		// animation: logo 8s infinite linear;
+	}
+
+	h1.splash {
+		font-size: 70px;
+		font-weight: 800;
+		letter-spacing: .5em;
+		color: #ffab00;
+		mix-blend-mode: difference;
+		z-index: 2;
+		// animation: logo 8s infinite linear;
+	}
+
+	// @keyframes example {
+ //    	0%   {color: #ffab00;}
+ //    	25%  {color: @red;}
+ //    	50%  {color: @blue;}
+ //    	100% {color: #ffab00;}
+	// }
+	// @keyframes logo {
+ //    	0%   {filter: invert(0%);}
+ //    	25%  {filter: invert(50%);}
+ //    	28%  {filter: invert(86%);}
+ //    	75%  {filter: invert(100%);}
+ //    	90%  {filter: invert(75%);}
+ //    	99%  {filter: invert(25%);}
+ //    	100% {filter: invert(0%);}
+	// }
+
 }
 
 header#flat {
@@ -52,6 +96,7 @@ header#flat {
 			height: @header;
 			width: @header;
 			background: @black;
+			opacity: 1;
 		}
 	}
 
@@ -232,24 +277,29 @@ section#profile {
 	justify-content: center;
 	align-items: center;
 	transition: 400ms all ease;
+	padding-bottom: @header;
 
 	visibility: hidden;
 	opacity: 0;
-
-	div#transferDiv {
-		margin-bottom: 10%;
-		z-index: 400;
-		width: 35%;
-		max-height: 80%;
 
 		div.profile-popup {
 			margin: 0 auto;
 			padding: 10px;
 			background: @white;
 			width: 100%;
-			height: 100%;
 			box-shadow: @default-shadow;
+
 			z-index: 400;
+			width: 50%;
+			min-width: 400px;
+			padding-left: 55px;
+			padding-right: 55px;
+			border-radius: 2px;
+
+			article {
+				padding: 0;
+				min-width: 0;
+			}
 		}
 
 		div.social {
@@ -323,8 +373,7 @@ section#profile {
 			box-shadow: @default-shadow;
 			transition: 200ms all ease;
 		}
-	}
-
+	
 
 	
 }
@@ -408,32 +457,7 @@ section#profile {
 		background-image: url("../../dist/res/rad.png");
 	}
 
-	input, textarea {
-		margin-top: 30px;
-		margin-bottom: 30px;
-		margin-left: 2%;
-		margin-right: 2%;
-		padding: 15px;
-		padidng-left: 10px;
-		width: 40%;
-		min-height: 55px;
-		font-size: 20px;
-		border: none;
-		border-radius: 2px;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	}
-
-	input, textarea:active {
-		outline: none;
-	}
-
-	textarea.big {
-		margin-bottom: 60px;
-		padding: 15px;
-		width: 84%;
-		min-height: 400px;
-		font-size: 20px;
-	}
+	
 }
 div.card h2 {
   font-size: 30px;
@@ -488,7 +512,8 @@ section#contact-form {
 	z-index: 101;
 
 	form {
-		width: 25%;
+		width: 30%;
+		min-width: 300px;
 		height: auto;
 		z-index: 100;
 		padding: 15px;
@@ -541,6 +566,8 @@ section#contact-form {
 				font-size: 14px;
 			}
 		}
+
+
 	}
 
 }
@@ -571,4 +598,67 @@ div#profileBlackout {
 	opacity: 0;
 	visibility: hidden;
 	transition: 200ms all ease;
+}
+
+
+
+// Portfolio 2
+
+section#portfolio2 {
+	width: 80%;
+	padding-top: 50px;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+
+	div.article {
+		margin-left: 4%;
+		margin-right: 4%;
+		margin-bottom: 80px;
+		width: 42%;
+		min-width: 500px;
+		height: auto;
+		padding: 10px;
+
+		div.image {
+			width: 100%;
+			height: 340px;
+			margin-bottom: 20px;
+			border-radius: 6px;
+			box-shadow: @default-shadow;
+		}
+
+		a {
+			width: 100%;
+		}
+		h1 {
+			width: 100%;
+
+		}
+		p {
+			width: 100%;
+			font-size: 14px;
+		}
+	}
+
+	#n1 {
+		  background-image: url("../../dist/res/cubeworld.png");
+	  background-size: cover;
+	}
+	#n2 {
+	  background-image: url("../../dist/res/skeleton-plus.jpg");
+	  background-size: cover;
+	}
+	#n3 {
+	  background-image: url("../../dist/res/crystal-learning.jpg");
+	  background-size: cover;
+	}
+	#n4 {
+		background-image: url("../../dist/res/unit circle.png");
+	  	background-size: cover;
+	}
+	#n5 {
+		background-image: url("../../dist/res/dc.png");
+	  background-size: cover;
+	}
 }

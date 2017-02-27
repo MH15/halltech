@@ -84,10 +84,10 @@ function generatePopup(buttonClick) {
 	}
 
 	var html = Mustache.to_html(template, content)
-	// var transferDiv = document.createElement("div")
-	// transferDiv.innerHTML = html
-	// transferDiv.className = "transferDiv"
-	picker("div#transferDiv").innerHTML = html
+	// var profile = document.createElement("div")
+	// profile.innerHTML = html
+	// profile.className = "pro"
+	picker("div.profile-popup").innerHTML = html
 
 
 	showProfile()
