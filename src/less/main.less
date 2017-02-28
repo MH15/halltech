@@ -1,6 +1,6 @@
 @import "layout";
 @import "ui";
-// @import "parallax";
+@import "media";
 
 body {
 	font-family: "Muli", sans-serif;
@@ -63,6 +63,7 @@ header#flat {
 	position: fixed;
 	bottom: 0;
 	left: 0;
+	width: 100%;
 	height: @header;
 	background: @black;
 	color: @white-dark;
@@ -87,6 +88,14 @@ header#flat {
 		}
 		.tab:hover {
 			opacity: 1;
+		}
+
+		.desktop {
+			display: block;
+		}
+
+		.mobile {
+			display: none;
 		}
 
 		#close {
@@ -120,7 +129,7 @@ header#flat {
 
 section#intro {
 	margin: 0 auto;
-	margin-top: 45px;
+	margin-top: 16px;
 	text-align: center;
 	// height: 590px;
 }
@@ -604,6 +613,8 @@ div#profileBlackout {
 
 // Portfolio 2
 
+
+
 section#portfolio2 {
 	width: 80%;
 	padding-top: 50px;
@@ -612,8 +623,7 @@ section#portfolio2 {
 	flex-wrap: wrap;
 
 	div.article {
-		margin-left: 4%;
-		margin-right: 4%;
+		margin: 0 auto;
 		margin-bottom: 80px;
 		width: 42%;
 		min-width: 500px;

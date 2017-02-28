@@ -24,3 +24,21 @@
   margin-right: 5px;
   font-size: 15px;
 }
+@media (max-width: 600px) {
+  header#flat .desktop {
+    display: none !important;
+  }
+  header#flat .mobile {
+    display: block !important;
+  }
+  header#flat .mobile i {
+    line-height: 55px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  section#profile2 div.article {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+}

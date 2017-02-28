@@ -9,6 +9,8 @@ body {
   padding: 0;
   font-family: 'Rubik', sans-serif;
   font-size: 12px;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 h1,
 h2,
@@ -107,6 +109,7 @@ h3.small {
   color: gray;
   margin: 0 auto;
   overflow: visible;
+  padding-top: 40px;
 }
 p.serif {
   margin-top: 15px;
@@ -308,6 +311,24 @@ article {
 .material-icons.small {
   margin-right: 5px;
   font-size: 15px;
+}
+@media (max-width: 600px) {
+  header#flat .desktop {
+    display: none !important;
+  }
+  header#flat .mobile {
+    display: block !important;
+  }
+  header#flat .mobile i {
+    line-height: 55px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  section#profile2 div.article {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
 }
 #splash {
   background: #FFFFFF;

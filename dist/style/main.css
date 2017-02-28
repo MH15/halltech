@@ -9,6 +9,8 @@ body {
   padding: 0;
   font-family: 'Rubik', sans-serif;
   font-size: 12px;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 h1,
 h2,
@@ -107,6 +109,7 @@ h3.small {
   color: gray;
   margin: 0 auto;
   overflow: visible;
+  padding-top: 40px;
 }
 p.serif {
   margin-top: 15px;
@@ -309,6 +312,24 @@ article {
   margin-right: 5px;
   font-size: 15px;
 }
+@media (max-width: 600px) {
+  header#flat .desktop {
+    display: none !important;
+  }
+  header#flat .mobile {
+    display: block !important;
+  }
+  header#flat .mobile i {
+    line-height: 55px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  section#profile2 div.article {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+}
 body {
   font-family: "Muli", sans-serif;
 }
@@ -345,6 +366,7 @@ header#flat {
   position: fixed;
   bottom: 0;
   left: 0;
+  width: 100%;
   height: 55px;
   background: #181818;
   color: #E9E9E9;
@@ -370,6 +392,12 @@ header#flat .left .tab {
 header#flat .left .tab:hover {
   opacity: 1;
 }
+header#flat .left .desktop {
+  display: block;
+}
+header#flat .left .mobile {
+  display: none;
+}
 header#flat .left #close {
   position: fixed;
   bottom: 0;
@@ -390,7 +418,7 @@ header#flat .right #contact {
 }
 section#intro {
   margin: 0 auto;
-  margin-top: 45px;
+  margin-top: 16px;
   text-align: center;
 }
 section#team .center {
@@ -804,8 +832,7 @@ section#portfolio2 {
   flex-wrap: wrap;
 }
 section#portfolio2 div.article {
-  margin-left: 4%;
-  margin-right: 4%;
+  margin: 0 auto;
   margin-bottom: 80px;
   width: 42%;
   min-width: 500px;
