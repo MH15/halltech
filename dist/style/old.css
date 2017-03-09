@@ -324,8 +324,12 @@ article {
     padding-left: 15px;
     padding-right: 15px;
   }
-  section#profile2 div.article {
+  section#portfolio2 div.wrapper {
+    width: 100% !important;
+  }
+  section#portfolio2 div.wrapper div.article {
     width: 100%;
+    min-width: 90% !important;
     margin: 0 auto;
     margin-bottom: 80px;
   }

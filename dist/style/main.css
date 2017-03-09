@@ -324,8 +324,12 @@ article {
     padding-left: 15px;
     padding-right: 15px;
   }
-  section#profile2 div.article {
+  section#portfolio2 div.wrapper {
+    width: 100% !important;
+  }
+  section#portfolio2 div.wrapper div.article {
     width: 100%;
+    min-width: 90% !important;
     margin: 0 auto;
     margin-bottom: 80px;
   }
@@ -467,78 +471,6 @@ section#team #n3 {
 section#team #n4 {
   background-image: url("../../dist/res/ryan.jpg");
 }
-section#portfolio {
-  margin-top: 35px;
-  margin-bottom: 110px;
-  height: auto;
-  width: 100% !important;
-  overflow-x: auto;
-  padding-top: 28px;
-  padding-bottom: 28px;
-  padding-left: 17px;
-  padding-right: 17px;
-  background: url("../../dist/res/portfolio.jpg");
-  background: #FFFFFF;
-  background-size: cover;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-section#portfolio .poster {
-  margin-left: 12px;
-  margin-right: 12px;
-  height: 575px;
-  width: 300px;
-  flex-shrink: 0;
-  background: white;
-  color: #E9E9E9;
-  text-align: left;
-  box-shadow: 0 1px 10px 4px rgba(0, 0, 0, 0.2);
-  padding: 15px;
-  transition: all 300ms ease;
-}
-section#portfolio .poster .poster-image {
-  margin: 0 auto;
-  width: 100%;
-  height: 70%;
-  box-shadow: 0 1px 10px 4px rgba(0, 0, 0, 0.2);
-}
-section#portfolio .poster #n1 {
-  background-image: url("../../dist/res/cubeworld.png");
-  background-size: cover;
-}
-section#portfolio .poster #n2 {
-  background-image: url("../../dist/res/skeleton-plus.jpg");
-  background-size: cover;
-}
-section#portfolio .poster #n3 {
-  background-image: url("../../dist/res/crystal-learning.jpg");
-  background-size: cover;
-}
-section#portfolio .poster #n4 {
-  background-image: url("../../dist/res/unit circle.png");
-  background-size: cover;
-}
-section#portfolio .poster #n5 {
-  background-image: url("../../dist/res/dc.png");
-  background-size: cover;
-}
-section#portfolio #f1 {
-  background: #C0392B;
-}
-section#portfolio #f2 {
-  background: #2C3E50;
-}
-section#portfolio #f3 {
-  background: #27ae60;
-}
-section#portfolio #f4 {
-  background: #ff7656;
-}
-section#portfolio #f5 {
-  background: #662621;
-}
 section#content {
   padding-top: 30px;
   text-align: center;
@@ -562,7 +494,9 @@ section#profile div.profile-popup {
   padding: 10px;
   background: #FFFFFF;
   width: 100%;
+  max-height: 80%;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 16px 0 rgba(0, 0, 0, 0.19);
+  overflow-y: auto;
   z-index: 400;
   width: 50%;
   min-width: 400px;
@@ -826,35 +760,37 @@ div#profileBlackout {
 }
 section#portfolio2 {
   width: auto;
-  padding-left: 60px;
-  padding-right: 60px;
   padding-top: 50px;
+}
+section#portfolio2 div.wrapper {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  margin: 0 auto;
+  width: 66%;
 }
-section#portfolio2 div.article {
+section#portfolio2 div.wrapper div.article {
   margin: 0 auto;
   margin-bottom: 80px;
   width: 40%;
-  min-width: 275px;
+  min-width: 250px;
   height: auto;
   padding: 10px;
 }
-section#portfolio2 div.article div.image {
+section#portfolio2 div.wrapper div.article div.image {
   width: 100%;
   height: 400px;
   margin-bottom: 20px;
   border-radius: 6px;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 16px 0 rgba(0, 0, 0, 0.19);
 }
-section#portfolio2 div.article a {
+section#portfolio2 div.wrapper div.article a {
   width: 100%;
 }
-section#portfolio2 div.article h1 {
+section#portfolio2 div.wrapper div.article h1 {
   width: 100%;
 }
-section#portfolio2 div.article p {
+section#portfolio2 div.wrapper div.article p {
   width: 100%;
   font-size: 14px;
 }

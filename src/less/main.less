@@ -191,85 +191,7 @@ section#team {
 
 }
 
-section#portfolio {
-	margin-top: 35px;
-	margin-bottom: 110px;
-	height: auto;
-	width: 100% !important;
-	overflow-x: auto;
-	padding-top: 28px;
-	padding-bottom: 28px;
-	padding-left: 17px;
-	padding-right: 17px;
-	background: url("../../dist/res/portfolio.jpg");
-	background: @white;
-	background-size: cover;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: nowrap;
 
-	.poster {
-		margin-left: 12px;
-		margin-right: 12px;
-		height: 575px;
-		width: 300px;
-		flex-shrink: 0;
-		background: white;
-		color: @white-dark;
-		text-align: left;
-		box-shadow: 0 1px 10px 4px rgba(0, 0, 0, 0.2);
-		padding: 15px;
-
-		transition: all 300ms ease;
-
-		.poster-image {
-			margin: 0 auto;
-			width: 100%;
-			height: 70%;
-			box-shadow: 0 1px 10px 4px rgba(0, 0, 0, 0.2);
-		}
-
-		#n1 {
-			  background-image: url("../../dist/res/cubeworld.png");
-		  background-size: cover;
-		}
-		#n2 {
-		  background-image: url("../../dist/res/skeleton-plus.jpg");
-		  background-size: cover;
-		}
-		#n3 {
-		  background-image: url("../../dist/res/crystal-learning.jpg");
-		  background-size: cover;
-		}
-		#n4 {
-			background-image: url("../../dist/res/unit circle.png");
-		  background-size: cover;
-		}
-		#n5 {
-			background-image: url("../../dist/res/dc.png");
-		  background-size: cover;
-		}
-
-	}
-
-	#f1 {
-		background: #C0392B;
-	}
-	#f2 {
-		background: #2C3E50;
-	}
-	#f3 {
-		background: #27ae60;
-	}
-	#f4 {
-		background: @orange;
-	}
-	#f5 {
-		background: #662621;
-
-	}
-}
 
 section#content {
 	padding-top: 30px;
@@ -296,7 +218,9 @@ section#profile {
 			padding: 10px;
 			background: @white;
 			width: 100%;
+			max-height: 80%;
 			box-shadow: @default-shadow;
+			overflow-y: auto;
 
 			z-index: 400;
 			width: 50%;
@@ -617,40 +541,47 @@ div#profileBlackout {
 
 section#portfolio2 {
 	width: auto;
-	padding-left: 60px;
-	padding-right: 60px;
 	padding-top: 50px;
-	display: flex;
-	justify-content: flex-start;
-	flex-wrap: wrap;
 
-	div.article {
+	div.wrapper {
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+
+		// changed responsively
 		margin: 0 auto;
-		margin-bottom: 80px;
-		width: 40%;
-		min-width: 275px;
-		height: auto;
-		padding: 10px;
+		width: 66%;
 
-		div.image {
-			width: 100%;
-			height: 400px;
-			margin-bottom: 20px;
-			border-radius: 6px;
-			box-shadow: @default-shadow;
+		div.article {
+			margin: 0 auto;
+			margin-bottom: 80px;
+			width: 40%;
+			min-width: 250px;
+			height: auto;
+			padding: 10px;
+	
+			div.image {
+				width: 100%;
+				height: 400px;
+				margin-bottom: 20px;
+				border-radius: 6px;
+				box-shadow: @default-shadow;
+			}
+	
+			a {
+				width: 100%;
+			}
+			h1 {
+				width: 100%;
+	
+			}
+			p {
+				width: 100%;
+				font-size: 14px;
+			}
 		}
 
-		a {
-			width: 100%;
-		}
-		h1 {
-			width: 100%;
 
-		}
-		p {
-			width: 100%;
-			font-size: 14px;
-		}
 	}
 
 	#n1 {
