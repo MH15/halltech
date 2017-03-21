@@ -1,48 +1,39 @@
-
-
 var profileData =  {
 	"profiles": {
 		"Matthew": {
 			"id": "nameMatthew",
 			"name": "Matthew Hall",
 			"location": "Ohio",
-			"companyPostion": "Dope",
+			"companyPostion": "Technical Lead",
 			"image": "n3",
-			"bio": "Peter Hall is a 15 year old cofounder of Hall Technologies and a full stack developer there. He lives in Ohio, USA, and enjoys physics and engineering as well. In his spare time, he likes to run and build 3D printers."
-
+			"bio": "Matthew Hall is a 17 year old designer & developer in Dayton, Ohio. He is skilled in Javascript/NodeJS, C#, Less, and the Unity Game Engine. In his free time he explores exotic mathematics, builds 3D printers, and runs lots. He is currently an engineering student. "
 		},
-	
 		"Peter": {
 			"id": "namePeter",
 			"name": "Peter Hall",
 			"location": "Ohio",
-			"companyPostion": "Dope",
+			"companyPostion": "Systems Engineer",
 			"image": "n2",
-			"bio": "Peter Hall is a 15 year old cofounder of Hall Technologies and a full stack developer there. He lives in Ohio, USA, and enjoys physics and engineering as well. In his spare time, he likes to run and build 3D printers."
-	
+			"bio": "Peter Hall is a 15 year old developer at Hall Tech. He lives in Dayton, Ohio. He is skilled primarily in Javascript, Less, and PHP. He has interests in physics, mathematics, astronomy, and engineering as well and has built a 3D printer from scratch with his brother Matthew."
 		},
-	
 		"Daniel": {
 			"id": "nameDaniel",
 			"name": "Daniel Oltmanns",
 			"location": "Germany",
-			"companyPostion": "Dope",
+			"companyPostion": "Full-Stack Developer",
 			"image": "n1",
-			"bio": "Peter Hall is a 15 year old cofounder of Hall Technologies and a full stack developer there. He lives in Ohio, USA, and enjoys physics and engineering as well. In his spare time, he likes to run and build 3D printers."
-	
+			"bio": "Daniel Oltmanns is a 16 year old full-stack Web Developer in Germany. In his early days, he was fascinated by code and started by creating games. Later on he got into web development and is skilled in HTML5, JavaScipt, Node.js, Crystal, and PHP."
 		},
 	
 		"Ryan": {
 			"id": "nameRyan",
 			"name": "Ryan Wolf",
 			"location": "Ohio",
-			"companyPostion": "Dope",
+			"companyPostion": "Front-End Developer",
 			"image": "n4",
-			"bio": "Peter Hall is a 15 year old cofounder of Hall Technologies and a full stack developer there. He lives in Ohio, USA, and enjoys physics and engineering as well. In his spare time, he likes to run and build 3D printers."
-	
+			"bio": "Ryan Wolf is a front end developer living in Dayton, Ohio. He is talented it Javascript/JQuery, Java, and HTML5. He enjoys [insert stuff here]."
 		}
 	},
-
 	"template": `
 			<!--<i class="material-icons close">clear</i>-->
 			<div class="circle" id="{{image}}"></div>

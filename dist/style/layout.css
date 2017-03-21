@@ -171,6 +171,9 @@ a {
   color: #A4A1A1;
   text-decoration: none;
 }
+a.dark {
+  color: #181818;
+}
 button {
   font-family: "Roboto", sans-serif;
   font-weight: 300;

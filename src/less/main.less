@@ -7,8 +7,8 @@ body {
 }
 
 #splash {
-	background: url('../res/nasa.jpg');
-	background-size: cover;
+	background: url('../res/nasa.jpg') center;
+	background-size: auto;
 	z-index: 1;
 	display: flex;
 	align-items: center;
@@ -73,7 +73,7 @@ header#flat {
 	transition: all 200ms ease;
 	box-shadow: 0px 5px 5px 5px #181818b3;
 	padding-left: @header;
-	z-index: 0;
+	z-index: 2;
 
 	.left {
 		display: flex;
@@ -315,6 +315,7 @@ section#profile {
 	width: 100%;
 	text-align: center;
 	flex-wrap: wrap;
+	z-index: 1;
 
 	.card {
 		margin: 60px;
