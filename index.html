@@ -32,6 +32,8 @@
 
 <body>
 	
+	<!-- Begin Popups -->
+
 	<header id="flat">
 		<div class="left">
 			<div class="tab" id="close">||</div>
@@ -70,19 +72,33 @@
 				<button class="green" id="submit" name="submit" type="submit">Get a Quote</button>
 			</div> 
 		</form>
-	<div id="blackout"></div>
+		<div id="blackout"></div>
 	</section>
+
+
+
+	<section id="profile">
+		<div class="profile-popup"></div>
+		<div id="profileBlackout"></div>
+	</section>
+
+	<!-- End popups -->
+
+
+
 
 	<section id="splash" class="full-height">
-			<div class="splash-row">
-				<div id="logo"></div>
-			<h1 class="splash">HALL TECH</h1>
-			</div>
+		<div class="splash-row">
+			<div id="logo"></div>
+		<h1 class="splash">HALL TECH</h1>
+		</div>
 			
 	</section>
+	
+	<div id="splashdrop"></div>
 
-<!-- 	<section class="fade"></section>
- -->
+	<main>
+
 	<section id="intro" class="">
 		<h3 class="small">Who we are</h3>
 		<div class="card-container full-width flex fl-center">
@@ -91,28 +107,7 @@
 	</section>
 
 
-	<section id="profile">
-		<div class="profile-popup"></div>
-		<div id="profileBlackout"></div>
-	</section>
 
-	<!-- <section id="profile">
-		<div class="sign">
-			<i class="material-icons close">clear</i>
-			<div class="circle" id="n2"></div>
-			<h1 class="card-title">Peter Hall</h1>
-			<p class="subtitle">Company Position</p>
-			<article>Peter Hall is a 15 year old cofounder of Hall Technologies and a full stack developer there. He lives in Ohio, USA, and enjoys physics and engineering as well. In his spare time, he likes to run and build 3D printers.</article>
-			<div class="social">
-				<span>
-					<img class="icon" src="dist/res/social/twitter.svg" width="25">
-				</span>
-				<span>
-					<img class="icon" src="dist/res/social/github.svg" width="25">
-				</span>
-			</div>
-		</div>
-	</section> -->
 
 	<section id="team">
 		<h3 class="small">Team</h3>
@@ -211,7 +206,9 @@
 		</div>
 	</section>
 
+
 	<footer>&copy 2017 Native Tech</footer>
+	</main>
 
 	<script type="text/javascript" src="dist/lib/mustache.js"></script>
 	<script type="text/javascript" src="data/profileData.js"></script>

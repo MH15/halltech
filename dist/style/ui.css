@@ -25,6 +25,9 @@
   font-size: 15px;
 }
 @media (max-width: 600px) {
+  header#flat {
+    justify-content: unset;
+  }
   header#flat .desktop {
     display: none !important;
   }
