@@ -12,7 +12,7 @@ var profileData =  {
 			"id": "namePeter",
 			"name": "Peter Hall",
 			"location": "Ohio",
-			"companyPostion": "Systems Engineer",
+			"companyPostion": "Designer",
 			"image": "n2",
 			"bio": "Peter Hall is a 15 year old developer at Hall Tech. He lives in Dayton, Ohio. He is skilled primarily in Javascript, Less, and PHP. He has interests in physics, mathematics, astronomy, and engineering as well and has built a 3D printer from scratch with his brother Matthew."
 		},
