@@ -124,13 +124,17 @@ p.serif {
   font-size: 16px;
 }
 a {
-  margin: 0 px;
+  margin: 0px;
   padding: 0px;
   color: #A4A1A1;
   text-decoration: none;
 }
 a.dark {
   color: #181818;
+  transition: all 300ms ease;
+}
+a.dark:hover {
+  color: #4ce274;
 }
 button {
   font-family: "Roboto", sans-serif;

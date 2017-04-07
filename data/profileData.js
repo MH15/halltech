@@ -12,7 +12,7 @@ var profileData =  {
 			"id": "namePeter",
 			"name": "Peter Hall",
 			"location": "Ohio",
-			"companyPostion": "Designer",
+			"companyPostion": "Systems Engineer",
 			"image": "n2",
 			"bio": "Peter Hall is a 15 year old developer at Hall Tech. He lives in Dayton, Ohio. He is skilled primarily in Javascript, Less, and PHP. He has interests in physics, mathematics, astronomy, and engineering as well and has built a 3D printer from scratch with his brother Matthew."
 		},
@@ -31,7 +31,7 @@ var profileData =  {
 			"location": "Ohio",
 			"companyPostion": "Front-End Developer",
 			"image": "n4",
-			"bio": "Ryan Wolf is a front end developer living in Dayton, Ohio. He is talented it Javascript/JQuery, Java, and HTML5. He enjoys [insert stuff here]."
+			"bio": "Ryan Wolf is a front end developer living in Dayton, Ohio. He is talented it Javascript/JQuery, Java, and HTML5. He enjoys ."
 		}
 	},
 	"template": `
@@ -40,14 +40,5 @@ var profileData =  {
 			<h1 class="card-title">{{name}}</h1>
 			<p class="subtitle">{{companyPostion}}</p>
 			<article>{{bio}}</article>
-			<div class="social">
-				<span>
-					<img class="icon" src="dist/res/social/twitter.svg" width="25">
-				</span>
-				<span>
-					<img class="icon" src="dist/res/social/github.svg" width="25">
-				</span>
-			</div>
-		
 		`
 }
