@@ -25,6 +25,6 @@
         header("Location: error.html");
         echo 'Mailer error: ' . $mail->ErrorInfo;
     } else {
-        header("Location: thanks.html");
+        header("Location: index.html");
     }
 ?>
